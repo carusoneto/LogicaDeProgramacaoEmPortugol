@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   n : inteiro
+inicio
+      escreva(" digite um valor : ")
+      leia(n)
+             se ( n < -1 ) entao
+                escreva(" sua contagem não pode ser realizada ")
+             senao
+                  para n := 0 ate n faca
+                       escreva(n)
+                  fimpara
+                  escreval(" FIM ")
+             fimse
+
+fimalgoritmo

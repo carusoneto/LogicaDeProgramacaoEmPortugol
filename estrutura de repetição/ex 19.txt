@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   contador, fator : inteiro
+inicio
+      contador := 10
+      fator := 1
+      repita
+               escreva(contador, " x ")
+               fator := fator * contador
+               contador := contador - 1
+      ate ( contador = 1)
+      escreva(fator)
+fimalgoritmo

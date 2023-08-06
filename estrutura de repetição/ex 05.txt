@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   fim, contagem : inteiro
+inicio
+      contagem := 0
+      escreva(" digite até onde quer contar ? ")
+      leia(fim)
+      enquanto (contagem <= fim ) faca
+               escreva(contagem)
+               contagem := contagem + 1
+      fimenquanto
+fimalgoritmo

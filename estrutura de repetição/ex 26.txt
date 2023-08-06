@@ -1,0 +1,34 @@
+algoritmo "semnome"
+var
+   aluno, contador : inteiro
+   nome, nome_maior : caracter
+   n1, n2, media, maior : real
+   
+inicio
+      escreval(" -------------------------")
+      escreval("  ESCOLA SANTA PACIÊNCIA ")
+      escreval(" -------------------------")
+      escreva(" quantos alunos a turma tem ? ")
+      leia(aluno)
+      contador := 1
+      maior := 0
+      nome_maior := " nada "
+      enquanto ( contador <=  aluno ) faca
+               escreval(" ALUNO ",contador)
+               escreva(" digite o nome do aluno : ")
+               leia(nome)
+               escreva(" digite sua primeira nota : ")
+               leia(n1)
+               escreva(" digite sua segunda nota : ")
+               leia(n2)
+               media := (n1 + n2)/2
+                     se ( media > maior ) entao
+                          maior := media
+                          nome_maior := nome
+                     fimse
+               escreval(" ",nome," teve media ",media)
+               escreval("--------------------------------")
+               contador := contador + 1
+      fimenquanto
+      escreva(" o aluno que teve o maior rendimento foi ",nome_maior," com a média de ",maior)
+fimalgoritmo

@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   contador, n, soma, maior, menor : inteiro
+inicio
+      contador := 1
+      soma := 0
+      maior := 0
+      menor := 10
+      enquanto ( contador <= 10) faca
+               escreva(" digite o número a ser somado : ")
+               leia(n)
+               se ( n > maior ) entao
+                  maior := n
+               senao
+                    se ( n < menor ) entao
+                       menor := n
+                    fimse
+               fimse
+               soma := soma + n
+               contador := contador + 1
+      fimenquanto
+      escreval(" a soma dos números digitados a cima é de : ",soma)
+      escreval(" o maior número digitado foi : ",maior)
+      escreva(" digite o menor número digitado : ",menor)
+fimalgoritmo

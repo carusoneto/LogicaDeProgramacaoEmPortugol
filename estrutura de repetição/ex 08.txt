@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   contagem, n, soma, fim: inteiro
+inicio
+      escreva(" digite onde começa : ")
+      leia(contagem)
+      escreva(" digite o fim da contagem ")
+      leia(fim)
+      soma := 0
+      enquanto (contagem <= fim) faca
+               escreval(contagem)
+               soma := soma + contagem
+               contagem := contagem + 1
+      fimenquanto
+      escreval(" a soma entre todos os números digitados é ",soma)
+fimalgoritmo

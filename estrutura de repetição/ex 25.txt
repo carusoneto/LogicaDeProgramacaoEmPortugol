@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   contador, final : inteiro
+   reais, dolar : real
+   resp : caracter
+inicio
+         repita
+               escreva(" digite qual o valor em reais que você tem : ")
+               leia(reais)
+                dolar := reais / 5.5
+               escreval(" logo a quantia em dolares que você tem é de ",dolar:4:2,"  dolares ")
+               escreva(" você deseja continuar a conversão ? [s] [n] ")
+               leia(resp)
+               limpatela
+         ate ( resp = "n" )
+fimalgoritmo

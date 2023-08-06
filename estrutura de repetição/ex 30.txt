@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+   contador, fim : inteiro
+inicio
+      contador := 30
+      enquanto ( contador >= 1 ) faca
+               se ( contador%4 = 0 ) entao
+                  escreva("[",contador," ]")
+               fimse
+               escreva(contador)
+               contador := contador - 1
+      fimenquanto
+      escreva(" acabou ! ")
+fimalgoritmo

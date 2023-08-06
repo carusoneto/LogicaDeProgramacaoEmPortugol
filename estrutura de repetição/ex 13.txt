@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   comeco, fim, padrao : inteiro
+inicio
+      escrevaL(" CONTAGEM INTELIGENTE ")
+      escreva(" INICIO : ")
+      leia(comeco)
+      escreva(" FIM : ")
+      leia(fim)
+      escreva(" PADRÃO : ")
+      leia(padrao)
+      se ( comeco < fim ) entao
+         enquanto (comeco <= fim) faca
+                  escreva(comeco)
+                  comeco := comeco + padrao
+         fimenquanto
+      senao
+         enquanto (comeco >= fim) faca
+                  escreva(comeco)
+                  comeco := comeco - padrao
+         fimenquanto
+      fimse
+fimalgoritmo

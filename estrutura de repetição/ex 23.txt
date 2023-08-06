@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+   contador, par, comeco : inteiro
+inicio
+      contador := 100
+      par := 0
+      enquanto ( contador >= 1 ) faca
+               escreva(contador)
+                        se ( contador % 2 = 0 ) entao
+                           par := par + 1
+                        fimse
+                contador := contador - 1
+      fimenquanto
+      escreval("")
+      escreval(" terminei de contar " )
+      escreva(" no intervalo acima temos ",par," números pares !")
+fimalgoritmo

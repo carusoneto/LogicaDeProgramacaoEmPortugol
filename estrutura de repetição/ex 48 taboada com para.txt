@@ -1,0 +1,10 @@
+algoritmo "semnome"
+var
+   contador, n : inteiro
+inicio
+      escreva(" digite qual número você quer calcular a taboada : ")
+      leia(n)
+      para contador := 1 ate 9 faca
+           escreval(n," x ",contador," = ", n *  contador)
+      fimpara
+fimalgoritmo

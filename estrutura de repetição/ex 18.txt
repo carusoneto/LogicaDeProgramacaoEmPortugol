@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   contador,n, nnegativo : inteiro
+inicio
+      contador := 1
+      nnegativo := 0
+      repita
+       escreva("digite o ",contador,"° número ")
+       leia(n)
+       se ( n < 0) entao
+          nnegativo := nnegativo + 1
+       fimse
+       contador := contador + 1
+      ate (contador >= 11)
+      escreva(" digite quantos números negativos foram digitados ",nnegativo)
+fimalgoritmo

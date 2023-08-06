@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   contador,n, taboada : inteiro
+inicio
+      escreva(" qual o número que você quer ver a tabuada : " )
+      leia(n)
+      contador := 1
+      repita
+            taboada := n * contador
+            escreval(n," * ",contador," = ", taboada)
+            contador := contador + 1
+      ate ( contador > 10)
+fimalgoritmo

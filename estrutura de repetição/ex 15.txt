@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   contador, n, soma, maior : inteiro
+   resp : caracter
+inicio
+      contador := 1
+      resp := "sim"
+      soma := 0
+      maior := 0
+      repita
+            escreva(" digite o número : ")
+            leia(n)
+            se ( n > maior ) entao
+               maior := n
+            fimse
+            soma := soma + n
+            escreva(" voce deseja repetir ? [sim] [nao] : ")
+            leia(resp)
+      ate ( resp = "nao")
+      escreval(" a soma dos números digitados é de : ",soma)
+      escreva(" digite qual foi o maior número digitado : ",maior)
+fimalgoritmo

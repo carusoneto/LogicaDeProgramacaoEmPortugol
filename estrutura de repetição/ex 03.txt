@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   contador, fim : inteiro
+inicio
+      contador := 0
+      escreva(" digite até que númeor você quer contar ? ")
+      leia(fim)
+      enquanto (contador <= fim) faca
+               escreva(contador)
+               contador := contador +1
+      fimenquanto
+fimalgoritmo

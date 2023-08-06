@@ -1,0 +1,26 @@
+inicio
+      escreval("------------------------")
+      escreval(" ESCOLA SANTA PACIÊNCIA ")
+      escreval("------------------------")
+      escreva(" quantos alunos a turma tem : ")
+      leia(alunos)
+      escreval("---------------------------")
+      contador := 1
+      maior := 0
+      enquanto (alunos >= contador) faca
+               escreval(" ALUNO ")
+               escreva(" nome do aluno: ")
+               leia(aluno)
+               escreva(" digite a primeira nota : ")
+               leia(n1)
+               escreva(" digite a segunda nota : ")
+               leia(n2)
+               media := (n1+n2)/2
+               escreval(" MÉDIA : ",media)
+                  se ( media > maior ) entao
+                     maior := media
+                  fimse
+               alunos := alunos - 1
+      fimenquanto
+      escreva(" a maior media foi ",maior)
+fimalgoritmo

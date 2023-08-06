@@ -1,0 +1,34 @@
+algoritmo "semnome"
+var
+   contador, nome, idade, maior_dezoito, menor_cinco, maior_idade : inteiro
+   media : real
+inicio
+      contador := 1
+      media := 0
+      maior_idade := 0
+      maior_dezoito := 0
+      menor_cinco := 0
+      enquanto ( contador <= 10 ) faca
+               escreva(" qual o seu nome : ")
+               leia(nome)
+               escreva(" digite sua idade : ")
+               leia(idade)
+               escreval(" -------------------")
+               media := media + idade
+               se ( idade > 18 ) entao
+                  maior_dezoito := maior_dezoito + 1
+               senao
+                  se ( idade < 5 ) entao
+                     menor_cinco := menor_cinco + 1
+                  senao
+                       se ( idade > maior_idade) entao
+                          maior_idade := idade
+                       fimse
+                  fimse
+               fimse
+               contador := contador + 1
+      fimenquanto
+      escreval(" a media de todas as idade é ", media / 10,"!")
+      escreval(" temos ",maior_dezoito," pessoas maiores de 18 anos ")
+      escreval(" temos ",menor_cinco," pessoas menores que 5 anos ")
+fimalgoritmo

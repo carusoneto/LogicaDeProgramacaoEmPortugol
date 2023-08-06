@@ -1,0 +1,15 @@
+algoritmo "semnome"
+var
+   contagem : inteiro
+   dolar, reais : real
+inicio
+      escreva(" quatas vezes você quer fazer a conversão : ")
+      leia(contagem)
+      enquanto (contagem >= 1) faca
+               escreva(" digite o valor em reais que você tem : ")
+               leia(reais)
+               dolar := reais / 5.5
+               escreval(" logo a sua quantia de ",reais," reais, lhe deixa com ",dolar:4:2," de dolares ! ")
+               contagem:= contagem - 1
+      fimenquanto
+fimalgoritmo

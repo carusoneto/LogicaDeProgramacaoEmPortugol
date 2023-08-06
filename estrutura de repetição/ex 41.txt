@@ -1,0 +1,32 @@
+algoritmo "semnome"
+var
+   n, soma, maior, par : inteiro
+   resp : caracter
+inicio
+      resp := "s"
+      soma := 0
+      maior := 0
+      par := 0
+      enquanto ( resp = "s") faca
+               escreva("digite um número qualquer : ")
+               leia(n)
+               se ( n > maior ) e (n % 2 = 0) entao
+                  maior := n
+                  par := par + 1
+               senao
+                    se ( n > maior )entao
+                    maior := n
+                    senao
+                          se ( n % 2 = 0 ) entao
+                             par := par + 1
+                          fimse
+                    fimse
+               fimse
+               soma := soma + n
+               escreva(" voce deseja continuar [s] [n] : ")
+               leia(resp)
+      fimenquanto
+      escreval(" o somatoria de todos os números digitados é : ",soma)
+      escreval(" o maior número digitado é ", maior)
+      escreval(" dentre os valores digitados temos ",par," números pares ")
+fimalgoritmo

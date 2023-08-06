@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+   contador : inteiro
+   dolar, reais, s : real
+inicio
+      escreva("quantas vezes você quer fazer a conversão das moedas : ")
+      leia(contador)
+      s := 0
+      enquanto (contador >= 1) faca
+               escreva(" quantos em reais voce tem : ")
+               leia(reais)
+               dolar:= reais / 5.5
+               s := s + dolar
+               escreval(" a quantidade que voce tem de dolares é ",dolar:4:2,"$")
+               contador := contador - 1
+      fimenquanto
+      escreva(" soma em dolares ",s:4:2)
+fimalgoritmo

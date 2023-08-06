@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   comeco, fim, padrao : inteiro
+inicio
+      escreva(" digite o início da contagem : ")
+      leia(comeco)
+      escreva(" digite o fim da contagem : ")
+      leia(fim)
+      escreva(" digite o padrão a ser usado ")
+      leia(padrao)
+      se (comeco > fim ) entao
+         enquanto ( comeco >= fim ) faca
+                  escreva(comeco)
+                  comeco := comeco - 1
+         fimenquanto
+      senao
+          enquanto ( comeco < fim ) faca
+                   escreva(comeco)
+                   comeco := comeco + 1
+          fimenquanto
+      fimse
+fimalgoritmo

@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   contador, n, taboada : inteiro
+   resp : caracter
+inicio
+      repita
+                  escreva(" digite qual o número que você quer saber a taboada ? ")
+                  leia(n)
+                  contador := 1
+                        repita
+                              taboada := n*contador
+                              escreval(n," x ", contador," = ", taboada)
+                              contador := contador + 1
+                        ate ( contador > 10 )
+            escreva(" voce quer continuar : [s] [n] ")
+            leia(resp)
+      ate ( resp = "n")
+      
+fimalgoritmo

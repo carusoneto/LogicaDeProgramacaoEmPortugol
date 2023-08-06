@@ -1,0 +1,19 @@
+inicio
+      escreva(" qual o númeor que deseja começar a contagem : ")
+      leia(contador)
+      escreva(" qual o númeor que deseja terminar a contagem : ")
+      leia(fim)
+      escreva(" qual o padrao que deseja adotar de salto : ")
+      leia(salto)
+      se ( contador <= fim) entao
+         enquanto (contador <= fim) faca
+                  escreva(contador)
+                  contador:= contador + salto
+         fimenquanto
+      senao
+           enquanto (contador >= fim) faca
+                    escreva(contador)
+                    contador:= contador - salto
+           fimenquanto
+      fimse
+fimalgoritmo

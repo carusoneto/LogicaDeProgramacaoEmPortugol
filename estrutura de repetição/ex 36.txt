@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   contador, n, maior, menor : inteiro
+inicio
+      contador := 1
+      maior := 0
+      menor := 1000
+      enquanto ( contador <= 8 ) faca
+               escreva("digite o valor : ")
+               leia(n)
+               se ( n > maior ) entao
+                  maior := n
+               senao
+                    se ( n < menor ) entao
+                       menor := n
+                    fimse
+               fimse
+               contador := contador + 1
+      fimenquanto
+      escreval(" o maior preço é ",maior)
+      escreval(" e o menor preço é ",menor)
+fimalgoritmo

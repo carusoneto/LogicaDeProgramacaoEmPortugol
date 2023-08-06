@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   idade : inteiro
+   resp : caracter
+inicio
+      resp := "s"
+      enquanto ( resp = "s" ) faca
+               escreva("digite a sua idade " )
+               leia(idade)
+               escreva(" voce quer continuar a contar ? [s] [n] ")
+               leia(resp)
+      fimenquanto
+fimalgoritmo

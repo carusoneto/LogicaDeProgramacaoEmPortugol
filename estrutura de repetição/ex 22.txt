@@ -1,0 +1,37 @@
+algoritmo "supercontador"
+var
+   contador, contagem : inteiro
+   resposta : caracter
+inicio
+      enquanto ( contagem <= 2) faca
+      escreval("==============")
+      escreval("    M E N U   ")
+      escreval("==============")
+      escreval("[1] de 1 a 10 ")
+      escreval("[2] de 10 a 0 ")
+      escreval("[3] para sair ")
+      leia(contagem)
+            escolha(contagem)
+                   caso 1
+                     contador := 1
+                     repita
+                           escreva(contador,"...")
+                           contador := contador + 1
+
+                     ate (contador = 11)
+                     escreval("")
+                     
+                     caso 2
+                     contador := 10
+                     repita
+                           escreva(contador,"...")
+                           contador := contador - 1
+                     ate (contador = 0)
+                     escreval("")
+
+                     caso 3
+                     escreva( " SAINDO ... ")
+                     escreval("")
+            fimescolha
+      fimenquanto
+fimalgoritmo

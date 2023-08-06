@@ -1,0 +1,15 @@
+algoritmo "semnome"
+var
+   contagem, n, soma, fim: inteiro
+inicio
+      escreva(" quantas vezes você quer somar : ")
+      leia(contagem)
+      soma := 0
+      enquanto (contagem >= 0) faca
+               escreva(" digite o número a ser somado : ")
+               leia(n)
+               soma := soma + n
+               contagem := contagem - 1
+      fimenquanto
+      escreval(" a soma entre todos os números digitados é ",soma)
+fimalgoritmo

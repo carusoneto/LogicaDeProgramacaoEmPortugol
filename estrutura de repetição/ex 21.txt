@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   contador, fator,n : inteiro
+   resp : caracter
+inicio
+      fator := 1
+      resp := "s"
+      repita
+               escreva(" digite o número para calcular o fatorial : ")
+               leia(n)
+               repita
+                     escreval(n, " x ", fator:4)
+                     fator := fator * n
+                     n := n -  1
+               ate (n <= 0)
+               contador := contador - 1
+               escreval("o fatorial é ",fator)
+               escreva(" você deseja continuar ? [s] [n] : ")
+               leia(resp)
+               limpatela
+      ate ( resp = "n" )
+fimalgoritmo

@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   idade,idades, media, maior_que : inteiro
+   resp : caracter
+inicio
+
+      idades := 0
+      media := 0
+      resp := "s"
+      maior_que := 0
+      enquanto ( resp = "s" ) faca
+               escreva("digite a sua idade " )
+               leia(idade)
+               se ( idade > 21 ) entao
+                  maior_que := maior_que + 1
+               fimse
+               idades := idades + 1
+               media := media + idade
+               escreva(" voce quer continuar a contar ? [s] [n] ")
+               leia(resp)
+      fimenquanto
+      escreval(" a quantidade de idades digitadas foi ",idades)
+      escreval(" a media das idades digitadas é ",media / idades )
+      escreva(" e a quantidade de pessoas maiores que 21 é de ", maior_que)
+fimalgoritmo

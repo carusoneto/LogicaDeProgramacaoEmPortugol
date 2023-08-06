@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+   contador, n, soma, n_pares, n_impar : inteiro
+inicio
+      contador := 1
+      soma := 0
+      n_pares := 0
+      n_impar := 0
+      enquanto ( contador <= 6 ) faca
+               escreva(" digite o ",contador,"° número : ")
+               leia(n)
+               se ( n%2 = 0 ) entao
+                  n_pares := n_pares + 1
+               senao
+                    se (n%2 = 1 ) entao
+                       n_impar := n_impar + 1
+                    fimse
+               fimse
+               soma := soma + n
+               contador := contador + 1
+      fimenquanto
+      escreval(" a soma entre os números digitados acima é de : ", soma)
+      escreval(" entre os números digitados existem ",n_pares," números PARES ")
+      escreval(" e entre os números digitados existem ",n_impar," números IMPARES ")

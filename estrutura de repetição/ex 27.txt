@@ -1,0 +1,15 @@
+algoritmo "semnome"
+var
+ soma, n : inteiro
+ resp : caracter
+inicio
+      soma := 0
+      repita
+            escreva(" digite um número : ")
+            leia(n)
+            soma := soma + n
+            escreva(" você deseja continuar ? [s] [n] ")
+            leia(resp)
+      até ( resp = "n" )
+      escreva(" a soma dos valores é : ",soma)
+fimalgoritmo
