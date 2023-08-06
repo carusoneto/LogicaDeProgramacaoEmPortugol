@@ -1,0 +1,33 @@
+algoritmo "semnome"
+var
+   c : inteiro
+   nome : vetor[1..5] de caracter
+   n1 : vetor[1..5] de inteiro
+   n2 : vetor[1..5] de inteiro
+   m : vetor[1..5] de real
+   m_t : real
+inicio
+      m_t := 0
+      escreval(" ----------------------------------- ")
+      escreval("     PESQUISA DA MÉDIA DA TURMA      ")
+      escreval(" ----------------------------------- ")
+      para c := 1 ate 5 passo 1 faca
+           escreva(" digite o nome do ",c,"° aluno : ")
+           leia(nome[c])
+           escreva(" digite a primeira nota de ",nome[c]," : ")
+           leia(n1[c])
+           escreva(" digite a segunda nota de ",nome[c]," : " )
+           leia(n2[c])
+           m[c] := (n1[c] + n2[c]) / 2
+           m_t := m_t + m[c]
+      fimpara
+      m_t := m_t / 5
+      limpatela
+      escreval(" a media da turma é : ",m_t:4:2)
+      escreval(" os aluno que estão acima da média da classe são : ")
+      para c := 1 ate 5 passo 1 faca
+           se ( m[c] > m_t ) entao
+              escreval(" ",nome[c]:10," com média : ",m[c]:4:2)
+           fimse
+      fimpara
+fimalgoritmo

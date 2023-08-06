@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   n : caracter
+inicio
+      n := "caetano"
+
+      se( copia(n,1,1)) = "c"  entao
+          n := "lucas"
+      fimse
+      
+      escreva(copia(n,1,1))
+fimalgoritmo

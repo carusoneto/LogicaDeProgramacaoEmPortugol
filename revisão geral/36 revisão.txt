@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   x , y : inteiro
+procedimento soma(var a,b : inteiro)
+var
+
+inicio
+      a := a + 1
+      escreval(a)
+      b := b + 2
+      escreval(b)
+fimprocedimento
+inicio
+      x := 4
+      y := 8
+      soma(x,y)
+      escreval(x)
+      escreval(y)
+      
+fimalgoritmo

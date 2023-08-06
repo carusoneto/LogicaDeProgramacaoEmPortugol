@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   n, c : inteiro
+procedimento p_i(a : inteiro)
+var
+
+inicio
+
+         se ( a % 2 = 0 ) entao
+            escreval(" o número ",a," é PAR ")
+         senao
+              escreval(" o número ",a," é IMPAR ")
+         fimse
+
+fimprocedimento
+inicio
+      para c := 1 ate 3 passo 1 faca
+            escreva(" digite um número qualquer : ")
+            leia(n)
+            p_i(n)
+      fimpara
+fimalgoritmo

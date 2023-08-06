@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   n1, n2, s1 : inteiro
+procedimento soma( a,b : inteiro)
+var
+   s : inteiro
+inicio
+      s := a + b
+      s1 := s
+fimprocedimento
+inicio
+      escreva(" digite o primeiro valor : ")
+      leia(n1)
+      escreva(" digite o segundo valor : ")
+      leia(n2)
+      limpatela
+      escreval(" recebi o valor : ",n1)
+      escreval(" e recebi o valor : ",n2)
+      escreva(" e a soma entre eles é de : ")
+      soma(n1,n2)
+      escreva(s1)
+fimalgoritmo

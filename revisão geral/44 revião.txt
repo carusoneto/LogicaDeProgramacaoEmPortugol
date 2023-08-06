@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   c, j, aux : inteiro
+   n : vetor[1..10] de inteiro
+   
+inicio
+      escreval(" ordenamento de vetores ")
+      para c := 1 ate 10 passo 1 faca
+           escreva(" digite o ",c,"° número : ")
+           leia(n[c])
+      fimpara
+      escreval(" os vetores organizados de forma ordenada ficam : ")
+      para c := 1 ate 9 passo 1 faca
+           para j := c+1 ate 10 passo 1 faca
+                se ( n[c] > n[j] ) entao
+                   aux := n[c]
+                   n[c] := n[j]
+                   n[j] := aux
+                fimse
+           fimpara
+      fimpara
+      para c := 1 ate 10 passo 1 faca
+           escreva(n[c])
+      fimpara
+      escreva()
+      escreval(" e a contagem regressiva deles fica : ")
+      para c := 10 ate 1 passo -1 faca
+           escreva(n[c])
+      fimpara
+fimalgoritmo

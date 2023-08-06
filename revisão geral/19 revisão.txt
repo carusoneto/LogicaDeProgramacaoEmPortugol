@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   nome, nome_m : caracter
+   maior, c, nota, n : inteiro
+inicio
+      nome_m := " "
+      maior := 0
+      c := 1
+      escreva("quantos alunos tem a classe : ")
+      leia(n)
+      para c := 1 ate n faca
+           escreva(" digite o nome do ",c,"° aluno : ")
+           leia(nome)
+           escreva(" digite a média de ",nome," : ")
+           leia(nota)
+           se ( nota > maior ) entao
+              maior := nota
+              nome_m := nome
+           fimse
+      fimpara
+      escreva(" a maior nota foi ",maior," do aluno ",nome_m,"!")
+fimalgoritmo

@@ -1,0 +1,35 @@
+algoritmo "semnome"
+var
+   doar : inteiro
+   valor : real
+inicio
+      escreval("-----------------------------")
+      escreval("     CRIANÇA ESPERANÇA       ")
+      escreval("-----------------------------")
+
+      escreval(" muito obrigado por está participando ")
+      escreval(" para doar 10$ digite [1] ")
+      escreval(" para doar 20$ digite [2] ")
+      escreval(" para doar 30$ digite [3] ")
+      escreval(" para doar outros valores digite [4] ")
+      escreval(" para cancelar digite [6] ")
+      leia(doar)
+      escolha(doar)
+                   caso 1
+                        valor := 10
+                   caso 2
+                        valor := 20
+                   caso 3
+                        valor := 30
+                   caso 4
+                        escreval(" digite qual o valor você quer doar : ")
+                        leia(valor)
+                   caso 5
+                        valor := 0
+      fimescolha
+      escreval(" ---------------------------- ")
+      escreval(" sua doação foi de ",valor:4:2)
+      escreval("      muito obrigado !       " )
+      escreval(" -----------------------------")
+      fimescolha
+fimalgoritmo

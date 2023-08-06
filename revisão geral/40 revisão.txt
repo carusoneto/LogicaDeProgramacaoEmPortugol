@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   n : vetor [1..5] de inteiro
+   c, par : inteiro
+inicio
+      escreval(" digite números aleatórios : ")
+      para c := 1 ate 5 passo 1 faca
+           leia(n[c])
+           se ( n[c] % 2 = 0 ) entao
+              par := par + 1
+           fimse
+      fimpara
+      escreval(" foram identificados ",par," números pares, são eles : ")
+      para c := 1 ate 5 passo 1 faca
+           se ( n[c] % 2 = 0 ) entao
+              escreval(" o número na ",c,"° posição é PAR : ",n[c])
+           fimse
+      fimpara
+fimalgoritmo

@@ -1,0 +1,47 @@
+algoritmo "semnome"
+var
+   c, j, op : inteiro
+   v : vetor[1..3,1..3] de inteiro
+   r : caracter
+inicio
+      escreval(" preencha uma matriz de terceira ordem : ")
+      para c := 1 ate 3 passo 1 faca
+           para j := 1 ate 3 passo 1 faca
+                escreva(" digite o número da posição [",c,",",j,"] : ")
+                leia(v[c,j])
+           fimpara
+      fimpara
+      limpatela
+      escreval()
+      repita
+            escreval(" explorando a matriz ")
+            escreval(" ------------------- ")
+            escreval(" mostrar matriz [1] ")
+            escreval(" mostrar diagonal principal [2] ")
+            escreval(" mostrar triãngulo superior [3] ")
+            escreval(" mostrar triângulo inferiro [4] ")
+            leia(op)
+            escolha ( op )
+                    caso 1
+                    para c := 1 ate 3 passo 1 faca
+                         para j := 1 ate 3 passo 1 faca
+                              escreva(v[c,j])
+                         fimpara
+                         escreval()
+                    fimpara
+                    
+                    caso 2
+                    para c := 1 ate 3 passo 1 faca
+                         para j := 1 ate 3 passo 1 faca
+                              se ( c = j ) entao
+                              escreva(v[c,j])
+                              fimse
+                         fimpara
+                         escreval
+                    fimpara
+            fimescolha
+      escreva(" voce quer explorar mais [s] ou [n] : ")
+      leia(r)
+      limpatela
+      ate ( r = "n")
+fimalgoritmo

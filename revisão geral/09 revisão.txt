@@ -1,0 +1,28 @@
+algoritmo "semnome"
+var
+   nome : caracter
+   salario, aumento : real
+   dependente : inteiro
+inicio
+      escreva(" digite o nome do funcionário : ")
+      leia(nome)
+      escreva(" digite o valor do salário do funcionário : ")
+      leia(salario)
+      escreva(" digite quantos dependêntes ",nome," tem : ")
+      leia(dependente)
+      se ( dependente = 1 ) entao
+         aumento := salario * (5/100)
+      senao
+           se ( dependente >= 2 ) e ( dependente <= 3 ) entao
+              aumento := salario * (10/100)
+           senao
+                se ( dependente >= 4 ) entao
+                   aumento := salario * (20/100)
+                fimse
+           fimse
+      fimse
+      escreval(" o salario de ",nome," é ",salario," reais, e ele tem ")
+      escreval(" ",dependente," pessoas dependentes dele, por tanto ")
+      escreval(" irá receber um aumento de ",aumento," em cima do seu salário")
+      escreval(" que irá ficar ",salario + aumento," ! ")
+fimalgoritmo

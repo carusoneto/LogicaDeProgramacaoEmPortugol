@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+   dive, n, c : inteiro
+inicio
+      dive := 0
+      escreva(" digite um núemro : ")
+      leia(n)
+      para c := 1 ate n passo 1 faca
+           se ( n % c = 0 ) entao
+              dive := dive + 1
+           fimse
+      fimpara
+      se ( dive > 2 ) entao
+         escreva(" o número ",n," não é primo ")
+      senao
+           escreva(" o número ",n," é primo ")
+      fimse
+fimalgoritmo

@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   n, salto, contador : inteiro
+inicio
+      escreva(" quero contar até quanto : ")
+      leia(n)
+      escreva(" qual será o valor do salto : ")
+      leia(salto)
+      enquanto ( contador <= n ) faca
+               escreva(contador)
+               contador := contador + salto
+      fimenquanto
+fimalgoritmo

@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   x, y : inteiro
+procedimento soma(var a,b : inteiro)
+var
+
+inicio
+      escreval(" a soma entre x e y é : ", a + b )
+      a := a + 1
+      escreval(" o A que é igual ao valor de x, dentro do procedimento vale",a," e fora vale",a-1)
+      escreval(" porém se eu passar o valor dele por referencia, fora dor procedimeto ele também ")
+      escreval(" vai valer ",a)
+fimprocedimento
+inicio
+      x := 5
+      y := 6
+      soma(x,y)
+      escreval(x)
+fimalgoritmo

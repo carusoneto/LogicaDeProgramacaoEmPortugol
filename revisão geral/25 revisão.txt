@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   n, c : inteiro
+inicio
+      repita
+         escreval(" --------------------- ")
+         escreval("          MENU         ")
+         escreval(" --------------------- ")
+         escreval("     [1] de 1 a 10     ")
+         escreval("     [2] de 10 a 1     ")
+         escreval("     [3] sair ...      ")
+         leia(n)
+         escolha(n)
+                   caso 1
+                   c := 1
+                        para c := 1 ate 10 passo 1 faca
+                             escreva(c)
+                        fimpara
+                        escreval(" ")
+                   caso 2
+                   c := 10
+                     para c := 10 ate 1 passo -1 faca
+                          escreva(c)
+                     fimpara
+                     escreval(" ")
+                   caso 3
+                   escreva(" SAINDO ... ")
+         fimescolha
+      ate ( n = 3 )
+fimalgoritmo

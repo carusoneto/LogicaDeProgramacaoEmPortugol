@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+   nome : caracter
+   salario, aumento : real
+   dependente : inteiro
+inicio
+      escreva(" digite o nome do funcionário : ")
+      leia(nome)
+      escreva(" digite o salario de ",nome," : " )
+      leia(salario)
+      escreva(" digite quantos dependentes ",nome," tem : ")
+      leia(dependente)
+      escolha(dependente)
+                         caso 0
+                              aumento := salario
+                         caso 1,2,3
+                              aumento := salario * (10/100)
+                         caso 4,5
+                              aumento := salario * (20/100)
+                         outrocaso
+                                  aumento := salario * (30/100)
+      fimescolha
+      escreval(" o novo salario de ",nome," é ",salario + aumento:4:2)
+fimalgoritmo

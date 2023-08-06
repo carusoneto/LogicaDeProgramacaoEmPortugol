@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   n, f : inteiro
+inicio
+      escreval(" ---------------------- ")
+      escreval("  CONTAGEM INTELIGENTE  ")
+      escreval(" ---------------------- ")
+      escreva(" INICIO : ")
+      leia(n)
+      escreva(" FIM : ")
+      leia(f)
+      se ( n > f ) entao
+         enquanto ( n >= f ) faca
+                  escreva(n)
+                  n := n - 1
+         fimenquanto
+      senao
+           se ( n < f ) entao
+              enquanto ( n <= f ) faca
+                 escreva(n)
+                 n := n + 1
+              fimenquanto
+           fimse
+      fimse
+fimalgoritmo

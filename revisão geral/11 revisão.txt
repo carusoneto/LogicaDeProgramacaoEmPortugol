@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   n1, n2, media : real
+inicio
+      escreval(" --------------------------- ")
+      escreval("    ESCOLA JAVALI CANSADO    ")
+      escreval(" --------------------------- ")
+      escreva(" digite a primeira nota do aluno : ")
+      leia(n1)
+      escreva(" digite a segunda nota do aluno : ")
+      leia(n2)
+      escreval(" ------------------------------- ")
+      media := ( n1 + n2 ) / 2
+      escreva( " a media do aluno é : ",media:4:2)
+      se ( media <= 5 ) entao
+         escreva(" APROVEITAMETO : C ")
+      senao
+           se ( media > 5 ) e ( media <=7 ) entao
+              escreva(" APROVEITAMENTO : B ")
+           senao
+                se ( media > 7 ) e ( media <= 9 ) entao
+                   escreva(" APROVEITAMENTO : B+ ")
+                senao
+                     se ( media > 9  ) e ( media <= 10 ) entao
+                        escreva(" APROVEITAMENTO : A ")
+                     fimse
+                fimse
+           fimse
+      fimse
+fimalgoritmo

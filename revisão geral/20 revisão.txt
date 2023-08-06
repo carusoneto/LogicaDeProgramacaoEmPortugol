@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+   c, n : inteiro
+   r : caracter
+inicio
+      c := 1
+      repita
+         escreva(" digite qual número você quer ver a taboada : ")
+         leia(n)
+         para c := 1 ate 9 passo 1 faca
+              escreval(c, " x " , n , " = ", c * n )
+              c := c + 1
+         fimpara
+         escreva(" quer fazer mais uma taboada [s] ou [n] : ")
+         leia(r)
+      ate ( r = "n" )
+fimalgoritmo

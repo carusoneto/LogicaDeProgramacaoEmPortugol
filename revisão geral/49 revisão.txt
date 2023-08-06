@@ -1,0 +1,39 @@
+algoritmo "semnome"
+var
+   c, j, soma, prod, maior : inteiro
+   n : vetor[1..4,1..4] de inteiro
+inicio
+      escreval(" me mostre uma matriz de quarta ordem ")
+      para c := 1 ate 4 passo 1 faca
+           para j := 1 ate 4 passo 1 faca
+                escreva(" digite o termo da posição [",c,",",j,"] ")
+                leia(n[c,j])
+           fimpara
+      fimpara
+      para c := 1 ate 4 passo 1 faca
+           para j := 1 ate 4 passo 1 faca
+                escreva(n[c,j])
+                se ( c = j ) entao
+                   soma := soma + n[c,j]
+                fimse
+           fimpara
+           escreval()
+      fimpara
+      escreval(" a soma dos termos da diagonal principal é : ",soma)
+      escreva(" os termos da segunda linha são : ")
+      prod := 1
+      maior := 0
+      para j := 1 ate 4 passo 1 faca
+           escreva(n[2,j])
+           prod := prod * n[2,j]
+      fimpara
+      escreval()
+      escreval(" e o produto deles é ",prod)
+      escreva(" e o maior termo da terceira coluna é : ")
+      para c := 1 ate 4 passo 1 faca
+           se ( n[c,3] > maior ) entao
+              maior := n[c,3]
+           fimse
+      fimpara
+      escreva(maior)
+fimalgoritmo

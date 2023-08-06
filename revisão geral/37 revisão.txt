@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+   t1, t2 : inteiro
+procedimento proximo(a,b : inteiro)
+var
+   t3, c : inteiro
+inicio
+      para c := 3 ate 15 passo 1 faca
+            t3 := a + b
+            escreva(t3)
+            a := b
+            b := t3
+      fimpara
+fimprocedimento
+inicio
+      t1 := 0
+      escreva(t1)
+      t2 := 1
+      escreva(t2)
+      proximo(t1,t2)
+fimalgoritmo

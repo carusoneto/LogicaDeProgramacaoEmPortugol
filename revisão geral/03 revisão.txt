@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   altura, peso, imc : real
+inicio
+      escreva(" digite a sua altura : ")
+      leia(altura)
+      escreva(" digite o seu peso : ")
+      leia(peso)
+      imc := peso / altura ^ 2
+      escreval(" o seu índice de IMC é ",imc:4:2)
+      
+fimalgoritmo

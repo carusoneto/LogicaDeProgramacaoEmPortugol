@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+   ano, idade : inteiro
+inicio
+      escreva(" digite o ano que voce nasceu : ")
+      leia(ano)
+      idade := 2023 - ano
+      escreva(" você tem ",idade," anos ")
+      se ( idade > 21 ) entao
+         escreva(" e já é maior de idade ")
+      senao
+           escreva(" e ainda não é maior de idade ")
+      fimse
+fimalgoritmo

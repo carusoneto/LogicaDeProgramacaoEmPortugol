@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   n : inteiro
+inicio
+      escreva(" digite qualquer número para saber se ele é impar ou par : ")
+      leia(n)
+      escreva(" o número ",n," é ")
+      se ( n % 2 = 0 ) entao
+         escreva(" PAR ")
+      senao
+           escreva(" IMPAR ")
+      fimse
+fimalgoritmo

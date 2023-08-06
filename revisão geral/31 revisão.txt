@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   c, n, dive5, par, soma, nulo : inteiro
+   media : real
+inicio
+      para c := 1 ate 5 passo 1 faca
+           escreva(" digite o ",c,"° número : ")
+           leia(n)
+           soma := soma + n
+           se ( n % 5 = 0 ) entao
+              dive5 := dive5 + 1
+           senao
+                se ( n % 2 = 0 ) entao
+                   par := par + n
+                fimse
+           fimse
+      fimpara
+      media := soma / c
+      escreval(" a soma de todos os valores digitados é : ",soma)
+      escreval(" a media entre os valores é ",media)
+      escreval(" tivemos um total de ",dive5," valores divisiveis por 5 ")
+      escreval(" a soma dos números pares é ",par)
+fimalgoritmo

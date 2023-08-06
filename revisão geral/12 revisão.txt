@@ -1,0 +1,37 @@
+algoritmo "semnome"
+var
+   b, m, d : inteiro
+inicio
+      escreval(" -------------------------- ")
+      escreval("      BANGU X MADUREIRA     ")
+      escreval(" -------------------------- ")
+      escreva(" quantos gol bangu marcou : ")
+      leia(b)
+      escreva(" quantos gol madureira marcou : ")
+      leia(m)
+      se ( b > m ) entao
+         d := b - m
+      senao
+           se ( b < m ) entao
+              d := m - b
+           senao
+                se ( b = m ) entao
+                   d := 0
+                fimse
+           fimse
+      fimse
+      
+      escreval(" ------------------------- ")
+      escreval(" DIFERENÇA DE GOLS : ",d)
+      se ( d = 0 ) entao
+         escreva(" STATUS : EMPATE ")
+      senao
+           se ( d >= 1 ) e ( d <= 2 ) entao
+              escreva(" STATUS : NORMAL ")
+           senao
+                se ( ( d >= 3 ) entao
+                   escreva(" STATUS : GOLEADA ")
+                fimse
+           fimse
+      fimse
+fimalgoritmo

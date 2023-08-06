@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   contador, soma, maior, n : inteiro
+inicio
+      soma := 0
+      maior := 0
+      contador := 1
+      enquanto ( contador <= 5 ) faca
+               escreva(" digite o ",contador,"° número : ")
+               leia(n)
+               soma := soma + n
+               se ( n > maior ) entao
+                  maior := n
+               fimse
+               contador := contador + 1
+      fimenquanto
+      escreval(" a soma de todos os valores foi : ",soma)
+      escreval(" e o maior valor digitado é : ",maior)
+fimalgoritmo

@@ -1,0 +1,31 @@
+algoritmo "semnome"
+var
+   c, maior,peso : inteiro
+   nome, nome_m : caracter
+inicio
+      escreval(" ------------------------------------ ")
+      escreval("          DETECTOR DE PESADO          ")
+      escreval("   o maior peso ate agora : ",maior    )
+      escreval(" ------------------------------------ ")
+      para c := 1 ate 5 passo 1 faca
+           escreva(" digite o nome do ",c,"° candidato : ")
+           leia(nome)
+           escreva(" digite seu peso : ")
+           leia(peso)
+           se ( peso > maior ) entao
+              maior := peso
+              nome_m := nome
+           fimse
+           limpatela
+           escreval(" ------------------------------------ ")
+           escreval("          DETECTOR DE PESADO          ")
+           escreval("   o maior peso ate agora : ",maior    )
+           escreval(" ------------------------------------ ")
+      fimpara
+      limpatela
+      escreval(" ------------------------------------ ")
+      escreval("          DETECTOR DE PESADO          ")
+      escreval("   o maior peso ate agora : ",maior    )
+      escreval(" ------------------------------------ ")
+      escreval(" a pessoa mais pesada foi ",nome_m," com o peso de : ",maior," kg ")
+fimalgoritmo

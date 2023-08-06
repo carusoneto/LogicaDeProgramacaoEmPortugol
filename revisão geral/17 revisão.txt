@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+   c : inteiro
+   r, d : real
+inicio
+      escreva(" quantas vezes você quer fazer a conversão : ")
+      leia(c)
+      para c := 1 ate c passo 1 faca
+               escreva(" digite o valor em reais a ser convertido : ")
+               leia(r)
+               d := r / 5
+               escreval(" o valor de ",r," reais, convertido em dolares é : ",d:4:2)
+      fimpara
+fimalgoritmo

@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   ano, ano_atual, idade : inteiro
+   apto : logico
+inicio
+      escreval("---------------------------")
+      escreval(" DEPARTAMENTO DE TRANSITO ")
+      escreval("----------------------------")
+      escreva(" digite o ano atual : ")
+      leia(ano_atual)
+      escreva(" digite o ano de seu nascimento : ")
+      leia(ano)
+      idade := ano_atual - ano
+      se ( idade >= 18 ) entao
+         apto := verdadeiro
+      senao
+           apto := falso
+      fimse
+      escreval(" ---------- STATUS ------------")
+      escreval(" IDADE : ",idade," ANOS ")
+      se ( apto = verdadeiro ) entao
+         escreval(" APTO A TIRAR A CARTEIRA ")
+      senao
+           escreval(" INAPTO A TIRAR A CARTEIRA ")
+      fimse
+fimalgoritmo

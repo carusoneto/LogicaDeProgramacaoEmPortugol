@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+   fat,n,c : inteiro
+   r : caracter
+inicio
+
+      repita
+      fat := 1
+         escreva(" digite qual o número que você quer cálcular o fatorial : ")
+         leia(n)
+         para c := 1 ate n passo 1 faca
+              fat := fat * c
+         fimpara
+         escreval(" o fatorial de ",n," é ",fat)
+         escreva(" você quer continuar a cálcular [s] ou [n] : ")
+         leia(r)
+      ate ( r = "n" )
+fimalgoritmo
