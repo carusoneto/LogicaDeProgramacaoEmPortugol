@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   n : caracter
+   soc : vetor[1..5] de caracter
+   c, tot : inteiro
+inicio
+      tot := 0
+      escreval(" digite 10 nomes : ")
+      para c := 1 ate 10 passo 1 faca
+           leia(n)
+           se ( copia(n,1,1) = "c" ) entao
+              tot := tot + 1
+              soc[tot] := n
+           fimse
+      fimpara
+      escreval(" digite agora somente os nomes que começam com a letra C : ")
+      para c := 1 ate tot passo 1 faca
+           escreval(soc[c])
+      fimpara
+fimalgoritmo

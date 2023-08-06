@@ -1,0 +1,36 @@
+algoritmo "semnome"
+var
+   n : vetor[1..5] de caracter
+   nota1 : vetor[1..5] de real
+   nota2 : vetor[1..5] de real
+   m : vetor[1..5] de real
+   c, alunos_acima : inteiro
+   soma_turma, media_turma : real
+inicio
+      soma_turma := 0
+      alunos_acima := 0
+      escreval(" RAKING DA CLASSE ")
+      para c := 1 ate 5 passo 1 faca
+           escreval(" ",c,"° aluno ")
+           escreva(" digite o nome do aluno : ")
+           leia(n[c])
+           escreva(" digite a primeira nota de ",n[c]," : ")
+           leia(nota1[c])
+           escreva(" digite a segunda nota de ",n[c]," : ")
+           leia(nota2[c])
+           m[c] := (nota1[c] + nota2[c]) / 2
+           soma_turma := soma_turma + m[c]
+      fimpara
+      limpatela
+      media_turma := soma_turma / 5
+      
+      para c := 1 ate 5 passo 1 faca
+           escreval(" ",n[c]: 10," teve media ",m[c]:4:2)
+           se (m[c] > media_turma) entao
+              alunos_acima := alunos_acima + 1
+           fimse
+      fimpara
+      escreval("-------------------------------------")
+      escreval(" a media da turma é : ",media_turma:4:2)
+      escreval(" e nós temos um total de ",alunos_acima," alunos que estão acima da media ")
+fimalgoritmo

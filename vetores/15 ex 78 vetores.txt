@@ -1,0 +1,35 @@
+algoritmo "semnome"
+var
+   v : vetor[1..10] de inteiro
+   dez : vetor[1..10] de inteiro
+   tot : inteiro
+   c,j, aux : inteiro
+inicio
+      para c := 1 ate 10 faca
+           leia(v[c])
+           se ( v[c] % 10 = 0 ) entao
+           tot := tot + 1
+              dez[tot] := v[c]
+           fimse
+      fimpara
+
+      para c := 1 ate 9 faca
+           para j := c+1 ate 10 faca
+                se ( v[c] > v[j] ) entao
+                   aux := v[c]
+                   v[c] := v[j]
+                   v[j] := aux
+                fimse
+           fimpara
+      fimpara
+      escreval(" os números digitados em formatação ordenada são  : ")
+                 para c := 1 ate 10 faca
+                      escreva(v[c])
+                 fimpara
+      escreval(" ")
+      escreval("---------------------------------")
+      escreval(" e os números que são multiplos de 10 são : ")
+      para c := 1 ate tot faca
+           escreva(dez[c])
+      fimpara
+fimalgoritmo

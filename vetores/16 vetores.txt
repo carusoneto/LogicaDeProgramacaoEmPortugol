@@ -1,0 +1,45 @@
+algoritmo "semnome"
+var
+   n : vetor [1..10] de inteiro
+   c, n_par, j, aux : inteiro
+   par : vetor [1..10] de inteiro
+
+inicio
+      n_par := 0
+      escreval(" digite uma sequência de número para nós avaliarmos ")
+      para c := 1 ate 10 passo 1 faca
+           leia(n[c])
+           se ( n[c] % 2 = 0 ) entao
+              n_par := n_par + 1
+              par[c] := n[c]
+           fimse
+      fimpara
+      limpatela
+      escreval(" os números digitados foram : ")
+      para c := 1 ate 10 passo 1 faca
+           escreva(n[c])
+      fimpara
+      escreval(" ")
+      escreval(" e esses números de forma ordenada fica dessa maneira : ")
+      para c := 1 ate 9 faca
+           para j := c+1 ate 10 faca
+                se (n[c] > n[j] ) entao
+                   aux := n[c]
+                   n[c] := n[j]
+                   n[j] := aux
+                fimse
+           fimpara
+      fimpara
+      para c := 1 ate 10 passo 1 faca
+           escreva(n[c])
+      fimpara
+      escreval(" ")
+      escreval(" foram digitados um total de ",n_par," números pares, e eles estaram destacados por {} : ")
+      para c := 1 ate 10 passo 1 faca
+           se ( n[c] % 2 = 0 ) entao
+              escreval(" o número na ",c,"° posição é PAR, que é o número : {",n[c],"}")
+           senao
+                escreval(" o número na ",c,"° posição não é PAR, que é o númro : ",n[c])
+           fimse
+      fimpara
+fimalgoritmo

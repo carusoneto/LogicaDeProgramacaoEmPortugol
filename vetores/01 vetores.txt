@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   n : vetor[1..7] de inteiro
+inicio
+      n [1] := 1
+      n [2] := 2
+      n [3] := 3
+      n [4] := 4
+      n [5] := 5
+      n [6] := 6
+      n [7] := 7
+      escreva(n[1],n[2],n[3],n[4],n[5],n[6],n[7])
+fimalgoritmo

@@ -1,0 +1,35 @@
+algoritmo "semnome"
+var
+   n : vetor [1..15] de inteiro
+   ad : vetor[1..10] de inteiro
+   c, n1 : inteiro
+inicio
+      escreval(" jogo do ADIVINHA, digite 15 números no intervalo de 1 ate 15 ")
+      escreval(" e tente memorizar a posição de um número que o computador irá ")
+      escreval(" pedir, boa sorte ")
+      escreval(" dica, os números não podem ser repetidos ")
+      para c := 1 ate 15 passo 1 faca
+           escreva(" digite o número na ",c,"° posição : ")
+           leia(n[c])
+      fimpara
+      limpatela
+      n1 := 5
+      escreval(" tente adivinhar onde foi em qual posição foi digitado o " )
+      escreval(" algarismo ",n1," você só terá 10 chances ")
+      escreval(" digite a posição que o número ",n1," está : ")
+      c := 1
+      repita
+           escreva(" ",c,"° tentativa : ")
+           leia(ad[c])
+           se ( ad[c] = n1 ) entao
+              c := 10
+           senao
+                c := c + 1
+           fimse
+      ate ( c = 10 )
+      se ( c = 10 ) entao
+         escreva(" você acertou ")
+      senao
+           escreva(" voce não conseguiu acertar ")
+      fimse
+fimalgoritmo

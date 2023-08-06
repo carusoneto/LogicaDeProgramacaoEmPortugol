@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   n : vetor[1..5] de caracter
+   g : vetor[1..5] de caracter
+   s : vetor[1..5] de real
+   c : inteiro
+inicio
+      escreval(" digite as informações dos funcionários : ")
+      para c := 1 ate 5 passo 1 faca
+           escreval(" ",c,"° funcionario : ")
+           escreva(" digite seu nome : ")
+           leia(n[c])
+           escreva(" digite seu genero [m] ou [f] : ")
+           leia(g[c])
+           escreva(" digite o valor do seu salario : ")
+           leia(s[c])
+      fimpara
+      escreval(" agora me mostre somente os funcionarios do genero femino e ")
+      escreval(" e que ganham mais de 5 mil ")
+      para c := 1 ate 9 passo 1 faca
+           se ( g[c] = "f" ) e ( s[c] > 5000 ) entao
+              escreval(n[c] : 10, s[c])
+           fimse
+      fimpara
+fimalgoritmo

@@ -1,0 +1,41 @@
+algoritmo "semnome"
+var
+   i : vetor[1..7] de inteiro
+   c, soma, maior, p_maior : inteiro
+   media : real
+   maior_25 : vetor[1..7] de inteiro
+inicio
+      soma := 0
+      maior := 0
+      escreval(" digite a idade de 7 pessoas : ")
+      para c := 1 ate 7 faca
+      escreva(" escreva a ",c,"° idade : ")
+           leia(i[c])
+           se ( i[c] > 25 ) e ( i[c] > maior ) entao
+               maior_25[c] := i[c]
+               soma := soma + i[c]
+               maior := i[c]
+               p_maior := c
+            senao
+                 se ( i[c] > 25 ) entao
+                    maior_25[c] := i[c]
+                    soma := soma + i[c]
+                    p_maior := c
+                 senao
+                      se ( i[c] > maior ) entao
+                         maior := i[c]
+                         p_maior := c
+                      fimse
+                 fimse
+           fimse
+      fimpara
+      media := soma / c
+      escreval(" a media da turma é : ",media:4:2)
+      escreval(" a miaor idade digitada foi : ",maior," e ela foi digitada na poisição ",p_maior)
+      escreval(" nos temos pessoas  maiores de 25 anos nas posiçoes : ")
+      para c := 1 ate 7 faca
+           se ( i[c] > 25 ) entao
+              escreva(c)
+           fimse
+      fimpara
+fimalgoritmo

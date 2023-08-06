@@ -1,0 +1,5 @@
+variaveis compostas homogeneas unidmencionais 
+
+- variaveis compostas por conta que ela tem mais de um espaço para se guardar valores 
+- homogenea por conta que de ela guardar somente um tipo de variavel, como INTEIRO 
+- e unidimencional por conta que para identificar os valores postos, nós precisamos apenas de 1 endereço 

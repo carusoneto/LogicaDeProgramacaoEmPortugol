@@ -1,0 +1,31 @@
+algoritmo "semnome"
+var
+   n : vetor [1..5] de caracter
+   nota1 : vetor [1..5] de real
+   nota2 : vetor [1..5] de real
+   c : inteiro
+inicio
+      escreval(" LISTAGEM DA TURMA ")
+      escreval(" digite o nome dos alunos da turma : ")
+      para c := 1 ate 5 passo 1 faca
+           escreva(" ",c,"° aluno : ")
+           leia(n[c])
+      fimpara
+      limpatela
+      escreval(" digite a primeira nota do semestre de cada aluno : ")
+      para c := 1 ate 5 passo 1 faca
+           escreva(" ",1,"° nota do ",n[c]," : ")
+           leia(nota1[c])
+      fimpara
+      limpatela
+      escreval(" digite a segunda nota do semestre de cada aluno : ")
+      para c := 1 ate 5 passo 1 faca
+           escreva(" ",2,"° nota do ",n[c]," : ")
+           leia(nota2[c])
+      fimpara
+      limpatela
+      escreval(" A MEDIA DOS ALUNOS É : ")
+      para c := 1 ate 5 passo 1 faca
+           escreval(" ",n[c] : 10 ," teve média : ",(nota1[c] + nota2[c]) / 2 :4:2, ".")
+      fimpara
+fimalgoritmo

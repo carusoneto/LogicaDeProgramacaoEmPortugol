@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   n : vetor[1..7] de inteiro
+   c, par  : inteiro
+inicio
+      escreval(" digite 7 valores aleatorios : ")
+      para c := 1 ate 7 passo 1 faca
+           escreva(" digite o ",c,"° valor : ")
+           leia(n[c])
+           par := par + 1
+      fimpara
+       escreval(" nós temos um total de ",par," númeors pares ")
+       escreval(" no intervalo de algarismos digitados acima ")
+       escreval(" e são eles : ")
+       para c := 1 ate 7 passo 1 faca
+            se ( n[c] % 2 = 0 ) entao
+               escreval(" o número ",n[c]," que está na ",c,"° posição ")
+            fimse
+       fimpara
+fimalgoritmo

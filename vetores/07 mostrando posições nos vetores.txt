@@ -1,0 +1,27 @@
+algoritmo "semnome"
+var
+   n : vetor [1..5] de inteiro
+   c, pares, impares : inteiro
+inicio
+      pares := 0
+      impares := 0
+      para c := 1 ate 5 passo 1 faca
+           leia(n[c])
+           se ( n[c] % 2 = 0 ) entao
+              pares := pares + 1
+           senao
+                impares := impares + 1
+           fimse
+      fimpara
+      escreval(" foram digitados um total de ",pares," números PARES ")
+      escreval(" e um total de ",impares," números IMPARES ")
+      para c := 1 ate 5 passo 1 faca
+           se ( n[c] % 2 = 0 ) entao
+
+              escreval(" o número digitado na posição ",c,"° foi o ",n[c]," e ele é PAR")
+           senao
+
+                escreval(" o número digitado na posição ",c,"° foi o ",n[c]," e ele é IMPAR")
+           fimse
+      fimpara
+fimalgoritmo

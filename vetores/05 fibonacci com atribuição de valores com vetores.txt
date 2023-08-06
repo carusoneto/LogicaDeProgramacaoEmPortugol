@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+   n : vetor [3..15] de inteiro
+   c, t1 ,t2, t3 : inteiro
+inicio
+      escreva("fibonacci")
+      t1 := 0
+      escreva(t1)
+      t2 := 1
+      escreva(t2)
+      para c := 3 ate 15 faca
+           t3 := t1 + t2
+           n[c] := t3
+           escreva(n[c])
+           t1 := t2
+           t2 := t3
+      fimpara
+fimalgoritmo

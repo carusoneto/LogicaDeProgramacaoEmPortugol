@@ -1,0 +1,11 @@
+algoritmo "semnome"
+var
+   n : vetor [1..5] de inteiro
+inicio
+      leia(n[1])
+      leia(n[2])
+      leia(n[3])
+      leia(n[4])
+      leia(n[5])
+      escreva(n[2],n[5],n[1],n[3],n[4])
+fimalgoritmo

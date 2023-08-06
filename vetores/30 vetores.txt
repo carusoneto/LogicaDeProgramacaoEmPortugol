@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   n : vetor[1..9] de caracter
+   i : vetor[1..9] de inteiro
+   c : inteiro
+inicio
+      para c := 1 ate 9 passo 1 faca
+           escreva(" digite o nome da ",c,"° pessoa : ")
+                     leia(n[c])
+           escreva(" digite a idade de ",n[c]," : ")
+                     leia(i[c])
+      fimpara
+      escreval(" agora mostre somente as pessoas menores de 18 anos : ")
+      para c := 1 ate 9 passo 1 faca
+           se ( i[c] < 18 ) entao
+              escreval(" ",n[c] : 15,i[c])
+           fimse
+      fimpara
+fimalgoritmo

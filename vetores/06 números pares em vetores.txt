@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   c : inteiro
+   n : vetor [1..7] de inteiro
+   pares : inteiro
+inicio
+      para c := 1 ate 7 faca
+           leia(n[c])
+      fimpara
+
+      para c := 1 ate 7 faca
+           se ( n[c] % 2 = 0 ) entao
+              escreva("{",n[c],"}")
+              pares := pares + 1
+           senao
+                escreva(n[c])
+           fimse
+      fimpara
+      escreval(" foram digitado um total de ",pares," números pares ")
+fimalgoritmo
