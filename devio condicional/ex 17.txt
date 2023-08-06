@@ -1,0 +1,15 @@
+algoritmo "semnome"
+var
+   reais, v_dolar, dolares, d_dola, d_reais:real
+inicio
+      escreva("creusa tem quanto de reais guardados ? : ")
+      leia(reais)
+      escreva("qual o valor do dolar hoje : ")
+      leia(v_dolar)
+      dolares := int(reais/v_dolar)
+      d_dola := 2000 - dolares
+      d_reais := d_dola *5.45
+      escreval("a quantidade em reais de creusa da exatamente ",dolares," de dolares")
+      escreval("porém a quantidade minima de dolares para entrar no país é de 2000 dolares")
+      escreva("então a quantide de dolares que falta é de ",d_dola," e a quantidade em reais é de ",d_reais," $")
+fimalgoritmo

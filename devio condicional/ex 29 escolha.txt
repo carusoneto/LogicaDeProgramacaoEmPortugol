@@ -1,0 +1,45 @@
+algoritmo "semnome"
+var
+   nome: caracter
+   salario: real
+   anos_empresa, genero: inteiro
+inicio
+     escreval("[1] se gênero MASCULINO")
+     escreval("[2] se gênero FEMININO")
+     leia(genero)
+     escolha(genero)
+              caso 1
+              escreva(" digite o seu nome : ")
+              leia(nome)
+              escreva(" digite o valor do seu salário atual : ")
+              leia(salario)
+              escreva(" digite quantos anos você tem na empresa : ")
+              leia(anos_empresa)
+              se (anos_empresa > 1) e (anos <= 15) entao
+                 escreva(" o seu novo salário é de ",salario + (salario*5/100),"$")
+              senao
+                   se (anos_empresa > 15) e (anos <= 20) entao
+                      escreva(" o seu novo salario é de ",salario + (salario*12/100),"$")
+                   senao
+                        escreva(" seu novo salário é ",salario + (salario*23/100),"$")
+                   fimse
+              fimse
+              
+              caso 2
+              escreva(" digite o seu nome : ")
+              leia(nome)
+              escreva(" digite o valor do seu salário atual : ")
+              leia(salario)
+              escreva(" digite quantos anos você tem na empresa : ")
+              leia(anos_empresa)
+              se (anos_empresa > 1) e (anos <= 20) entao
+                 escreva(" o seu novo salário é de ",salario + (salario*3/100),"$")
+              senao
+                   se (anos_empresa > 20) e (anos <= 30) entao
+                      escreva(" o seu novo salario é de ",salario + (salario*13/100),"$")
+                   senao
+                        escreva(" seu novo salário é ",salario + (salario*25/100),"$")
+                   fimse
+              fimse
+     fimescolha
+fimalgoritmo

@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+n1:inteiro
+ant:inteiro
+sus:inteiro
+inicio
+escreva("digite um número : ")
+leia(n1)
+ant := n1 - 1
+sus := n1 + 1
+escreval("o antecessor de ", n1, " é ", ant)
+escreva(" e o sucessor de ", n1, " é ", sus)
+fimalgoritmo

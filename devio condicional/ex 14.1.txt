@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   n1, resultado : inteiro
+inicio
+      escreva(" digite um número : ")
+      leia(n1)
+      resultado := n1% 2
+       se (resultado = 0) entao
+          escreva(" o seu número é PAR ")
+       senao
+            escreva(" o seu número é IMPAR")
+       fimse
+fimalgoritmo

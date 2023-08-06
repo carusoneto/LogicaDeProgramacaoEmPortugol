@@ -1,0 +1,32 @@
+algoritmo "semnome"
+var
+   n1,n2,m: real
+inicio
+      escreva(" digite a primeira nota ")
+      leia(n1)
+      escreva(" digite a segunda nota ")
+      leia(n2)
+      m := (n1+n2)/2
+      escreva(" logo a média do aluno é ",m,"!")
+      se (m < 10) e (m >= 9)entao
+         escreva(" o aluno é avaliado como A")
+      senao
+           se (m < 9) e (m >= 8) entao
+              escreva(" o aluno é avaliado como B")
+           senao
+                se (m < 8) e (m >= 7) entao
+                   escreva(" o aluno é avaliado como C")
+                senao
+                     se (m < 7) e (m >= 6) entao
+                        escreva(" o aluno é avaliado como D")
+                     senao
+                          se (m < 6) e (m >= 5) entao
+                             escreva(" o aluno é avaliado como E")
+                          senao
+                             escreva(" o aluno é avaliado como F")
+                          fimse
+                     fimse
+                fimse
+           fimse
+      fimse
+fimalgoritmo

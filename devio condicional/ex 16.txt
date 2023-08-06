@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+   nasci,ano_atual,idade,menor,maior : inteiro
+inicio
+      escreva(" digite o seu ano de nascimento : ")
+      leia(nasci)
+      escreva(" qual o ano atual : ")
+      leia(ano_atual)
+      idade := ano_atual - nasci
+      menor := abs(idade - 18)
+      maior := idade - 18
+      se (idade = 18) entao
+         escreva(" você tem ",idade," anos e é necessario o seu comparecimento no quartel!")
+      senao
+           se (idade < 18) entao
+              escreva(" voce tem ",idade, " anos logo falta ",menor," anos para você servir")
+           senao
+              escreva(" voce tem ",idade," anos e já se passou ",maior," anos do seu alistamento")
+           fimse
+      fimse
+fimalgoritmo

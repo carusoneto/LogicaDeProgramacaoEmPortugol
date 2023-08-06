@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+n1:inteiro
+n2:inteiro
+s:inteiro
+inicio
+escreva("digite um número : ")
+leia(n1)
+escreva("digite outro número : ")
+leia(n2)
+s := n1 + n2
+escreval("a soma entre ", n1 , " e " , n2 , " vale ", s)
+fimalgoritmo

@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   contador, maior,padrao: inteiro
+   
+inicio
+      escreva(" até que número quer contar ? ")
+      leia(maior)
+      escreva(" partirei de que número ? ")
+      leia(contador)
+      escreva(" qual o padrão que devo seguir ? ")
+      leia(padrao)
+      se (maior > contador) entao
+         enquanto ( contador <= maior ) faca
+                  escreval(contador)
+                  contador := (contador + padrao)
+         fimenquanto
+      senao
+         enquanto ( contador >= maior ) faca
+                  escreval(contador)
+                  contador := (contador - padrao)
+         fimenquanto
+      fimse
+fimalgoritmo

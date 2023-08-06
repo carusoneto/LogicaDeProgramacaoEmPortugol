@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   nome: caracter
+   salario,s_final : real
+   dependente : inteiro
+inicio
+      escreva(" digite o nome : ")
+      leia(nome)
+      escreva(" digite salário : ")
+      leia(salario)
+      escreva(" digite quantos dependentes : ")
+      leia(dependente)
+      escolha(dependente)
+             caso 0
+                  s_final := salario + (0/100 * salario)
+             caso 1
+                  s_final := salario + (20/100 * salario)
+             caso 2 , 3 , 4
+                  s_final := salario + (30/100 * salario)
+             caso 5, 6
+                  s_final := salario + (40/100 * salario)
+             outrocaso
+                  s_final := salario + (50/100 * salario)
+      fimescolha
+      escreva(" o seu salário com o auxílio de dependentes irá ficar de ",s_final," $")
+fimalgoritmo

@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+cigarro:inteiro
+tempodecigarro_nodia:inteiro
+anos:inteiro
+tempodecigarro_ano:inteiro
+tempodecigarro_emhoras:real
+dias_perdidos:real
+inicio
+escreva("digite quanto cigarros você fuma por dia : ")
+leia(cigarro)
+escreva("digite quantos anos você já fumou : ")
+leia(anos)
+anos := anos*365
+tempodecigarro_nodia := cigarro * 10
+tempodecigarro_ano := tempodecigarro_nodia * anos
+tempodecigarro_emhoras := int(tempodecigarro_ano /60)
+dias_perdidos := int(tempodecigarro_emhoras /24)
+escreva("logo você diminuiu ", tempodecigarro_emhoras," horas da sua vida que totaliza ",dias_perdidos," de dias")
+fimalgoritmo

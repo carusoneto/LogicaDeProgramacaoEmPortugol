@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+   valor_da_casa,salario,v_mensal,v_aprovado,porcentagem: real
+   parcelamento,anos: inteiro
+inicio
+      escreva(" qual o valor da casa : ")
+      leia(valor_da_casa)
+      escreva(" qual o valor do seu salário : ")
+      leia(salario)
+      escreva(" em quantos anos você deseja fazer o parcelamento : ")
+      leia(parcelamento)
+      anos := parcelamento * 12
+      v_mensal := valor_da_casa / anos
+      v_aprovado := 30/100 * salario
+      porcentagem := v_mensal * 100 / salario
+      se (salario > v_aprovado) entao
+         escreva(" o valor a pagar mensalmente é de ",v_mensal:4:2,"$ e compromete ",porcentagem:4:2,"% de seu salário")
+         escreva(", o seu emprestimo foi aprovado!")
+      senao
+         escreva(" o valor a pagar mensalmente é de ",v_mensal:4:2,"$ e compromete ",porcentagem:4:2,"% de seu salário")
+         escreva(", a sua renda não está apta para pagemento do emprestimo")
+      fimse
+fimalgoritmo
+	

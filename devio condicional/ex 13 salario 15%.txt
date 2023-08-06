@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+salario:real
+aumento:real
+vfinal:real
+inicio
+escreva("digite o salário do funcionário : ")
+leia(salario)
+aumento := salario * (15/100)
+vfinal := salario + aumento
+escreva("o funcionário com o salário de ",salario,"$ vai receber um aumento de ",aumento,"$ referente a 15% do seu salário, assim totalizando, ",vfinal,"$")
+fimalgoritmo

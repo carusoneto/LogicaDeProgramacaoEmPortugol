@@ -1,0 +1,28 @@
+algoritmo "semnome"
+var
+   v, valor_da_multa : inteiro
+inicio
+      escreva(" digite a velocidade do carro : ")
+      leia(v)
+      valor_da_multa := v - 80
+      se (v > 80) e (valor_da_multa <= 2) entao
+         escreval(" sua velociade é ",v)
+         escreval(" você foi multado! ")
+         escreval(" o valor da sua multa é de ",valor_da_multa * 5," reais!")
+      senao
+           se (v > 80) e (valor_da_multa <= 5) entao
+               escreval(" sua velociade é ",v)
+               escreval(" você foi multado! ")
+               escreval(" o valor da sua multa é de ",valor_da_multa * 10," reais!")
+           senao
+                se (v > 80) e (valor_da_multa >= 6 ) entao
+                   escreval(" sua velociade é ",v)
+                   escreval(" você foi multado! ")
+                   escreval(" o valor da sua multa é de ",valor_da_multa * 20," reais!")
+                senao
+                  escreval(" sua velocidade é ",v)
+                  escreval(" você não foi multado!")
+                fimse
+           fimse
+      fimse
+fimalgoritmo

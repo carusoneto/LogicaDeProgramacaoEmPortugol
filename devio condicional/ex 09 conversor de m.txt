@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+m:real
+dam:real
+hm:real
+km:real
+dm:real
+mm:real
+cm:real
+inicio
+escreva("digite uma distância em metros : ")
+leia(m)
+dam := m/10
+hm := m/100
+km := m/1000
+dm := m*10
+mm := m*100
+cm := m*1000
+escreval("a distância de ",m, "m corresponde a : ")
+escreval(km,"km ", hm,"hm ", dam,"dam")
+escreva(cm,"cm ", mm,"mm ", dm,"dm")
+
+fimalgoritmo

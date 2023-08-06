@@ -1,0 +1,16 @@
+Algoritmo "funçoes aritméticas"
+
+Var
+numero1:real
+grau: real
+
+Inicio
+escreval("conversor de radianos para graus.")
+escreva("digite um número:")
+leia(numero1)
+grau := numero1 * 180/(pi)
+escreva("logo a conversão de " , numero1," para radianos é " ,grau, ".")
+
+Fimalgoritmo
+
+* a conversão de radianos para grau, é somente mudar a operação matemática da divisão de 180/pi para pi/180 

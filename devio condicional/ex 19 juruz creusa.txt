@@ -1,0 +1,15 @@
+algoritmo "semnome"
+var
+   v_emprestimo,parcelas,juruz,p_emprestimo:real
+inicio
+       escreva("qual o valor do emprestimo : ")
+       leia(v_emprestimo)
+       escreva("para receber o valor do emprestimo é cobrado um juruz de 20% em cima do valor emprestado ")
+       juruz := v_emprestimo * 20/100
+       p_emprestimo := juruz + v_emprestimo
+       escreval(",logo o valor total do emprestimo a ser pago é de ",p_emprestimo,"$")
+       escreva(" você prefere parcelar em quantas vezes : ")
+       leia(parcelas)
+       parcelas := p_emprestimo / parcelas
+       escreva("o valor mensal a ser pago é de ",parcelas,"$")
+fimalgoritmo

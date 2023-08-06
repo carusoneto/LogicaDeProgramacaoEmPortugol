@@ -1,0 +1,40 @@
+0algoritmo "semnome"
+var
+   dias,carro: inteiro
+   km: real
+inicio
+       escreval(" digite [1] para carro POPULAR ")
+       escreval(" digite [2] para carro LUXO ")
+       leia( carro)
+       escolha (carro)
+              caso 1
+                 escreva(" digite quantos dias você está com o carro : ")
+                 leia(dias)
+                 escreva(" digite quantos km você já rodou com o carro : ")
+                 leia(km)
+                 se (km > 0) e (km <= 500) entao
+                    escreval(" você esta com o carro a ",dias," dias e irá pagar ",dias*90,"$")
+                    escreval(" você rodou ",km,"km e irá pagar ",km*0.2,"$")
+                    escreval(" total a pagar ",(dias*90) + (km*0.2),"$")
+                 senao
+                    escreval(" você está com o carro a ",dias," e irá pagar ",dias*90,"$")
+                    escreval(" você rodou ",km,"km e irá pagara",km*0.1,"$")
+                    escreval(" total a pagar ",(dias*90) + (km*0.1),"$")
+                 fimse
+              
+              caso 2
+                   escreva(" digite quantos dias você está com o carro : ")
+                   leia(dias)
+                   escreva(" digite quantos km você rodou com o carro : ")
+                   leia(km)
+                   se (km > 0) e (km <= 200) entao
+                      escreval(" você está com o carro a ",dias," dias e irá pagar ",dias*150,"$")
+                      escreval(" você rodou ",km,"km e irá pagar ",km*0.3,"$")
+                      escreval(" total a pagar ",(dias*150) + (km*0.3),"$")
+                   senao
+                      escreval(" você está com o carro a ",dias," dias e irá pagar ",dias*150,"$")
+                      escreval(" você rodou ",km,"km e irá pagar ",km*0.25,"$")
+                      escreval(" total a pagar ",(dias*150) + (km*0.25),"$")
+                   fimse
+       fimescolha
+fimalgoritmo

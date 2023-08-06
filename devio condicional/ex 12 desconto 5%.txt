@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+p:real
+desc:real
+vdoprod:real
+inicio
+escreva("digite o valor de um produto : ")
+leia(p)
+desc := p * (5/100)
+vdoprod := p - 5
+escreva("logo o produto com o valor de ", p, "$ vai receber um desconto de ",desc, "$ e vai valer ",vdoprod, "$")
+fimalgoritmo

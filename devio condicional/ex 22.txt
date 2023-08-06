@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   nome: caracter
+   salario, aumento1,aumento2,aumento3: real
+   anos_empresa: real
+inicio
+      escreva(" digite o seu nome : ")
+      leia(nome)
+      escreva(" digite o valor do seu salário : ")
+      leia(salario)
+      escreva(" digite quantos anos você trabalha na empresa : ")
+      leia(anos_empresa)
+      aumento1 := salario + (salario * 3/100)
+      aumento2 := salario + (salario * 12.5/100)
+      aumento3 := salario + (salario * 20/100)
+      se (anos_empresa > 1) e (anos_empresa <= 3) entao
+         escreva(" seu salário de ",salario,"$ vai receber um aumento de 3% e vai valer ",aumento1,"$")
+      senao
+           se (anos_empresa > 3) e (anos_empresa <=10) entao
+              escreva(" seu salário de ",salario,"$ vai receber um aumento de 12.2% e vai valer",aumento2,"$")
+           senao
+              escreva(" seu salario de ",salario,"$ vai receber um aumento de 20% e vai valer",aumento3,"$")
+           fimse
+      fimse
+fimalgoritmo

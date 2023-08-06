@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   madureira, bangu, diferenca : inteiro
+inicio
+      escreva(" quantos gols de madureira : ")
+      leia(madureira)
+      escreva(" quantos gols de bangu : ")
+      leia(bangu)
+      diferenca := madureira - bangu
+      se (diferenca = 0) entao
+         escreva(" EMPATE ")
+      senao
+           se (diferenca > 1) e (diferenca <= 3) entao
+              escreva(" JOGO NORMAL ")
+           senao
+              escreva(" GOLEADA ")
+           fimse
+      fimse
+fimalgoritmo

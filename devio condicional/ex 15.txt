@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   ano: inteiro
+inicio
+      escreva(" digite o ano : ")
+      leia(ano)
+      se (ano%4 = 0) entao
+         escreva(" o seu ano é BISSEXTO!")
+      senao
+           escreva(" o seu ano não é BISSEXTO")
+      fimse
+fimalgoritmo

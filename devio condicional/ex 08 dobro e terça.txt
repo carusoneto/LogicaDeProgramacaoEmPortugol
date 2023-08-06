@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+n1:real
+dobro:real
+terca:real
+inicio
+escreva("digite um número : ")
+leia(n1)
+dobro := n1 * 2
+escreval("o dobro de ",n1," é ",dobro)
+terca := n1 / 3
+escreva("e a sua terça parte é ",terca)
+fimalgoritmo

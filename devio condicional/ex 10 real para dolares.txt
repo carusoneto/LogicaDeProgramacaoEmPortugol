@@ -1,0 +1,10 @@
+algoritmo "semnome"
+var
+di:real
+dolar:real
+inicio
+escreva("quanto de dinheiro você tem na carteira ? ")
+leia(di)
+dolar := di / 3.45
+escreva("com a quantida em reais de ", di, "$ você pode comprar ", dolar, "$ dolares")
+fimalgoritmo

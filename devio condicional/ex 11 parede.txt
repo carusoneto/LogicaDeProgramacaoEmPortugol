@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+x:real
+y:real
+area1:real
+tinta:real
+inicio
+escreva("digite a altura de sua parede : ")
+leia(x)
+escreva("digite a largura de sua parede : ")
+leia(y)
+area1 := x*y
+tinta := area1/2
+escreva("logo a área em metros quadrado de sua parede é ", area1," m²")
+escreva(" e a quantidade de tinta a ser utilizada para pintar a parede é ",tinta, " baldes de tinta")
+fimalgoritmo

@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   largura, comprimento, area : real
+inicio
+      escreva(" digite a largura do terreno : ")
+      leia(largura)
+      escreva(" digite o comprimento do terreno : ")
+      leia(comprimento)
+      area := largura * comprimento
+      escreval(" a areá em metros quadrados do seu terreno é de ",area,"m² e ")
+      se (area > 0) e (area <= 100) entao
+         escreva(" CATEGORIA DO TERRENO É : POPULAR ")
+      senao
+           se (area > 100) e (area <= 500) entao
+              escreva(" CATEGORIA DO TERRENO É : MASTER ")
+           senao
+                escreva(" CATEGORIA DO TERRENO É : VIP ")
+           fimse
+      fimse
+fimalgoritmo

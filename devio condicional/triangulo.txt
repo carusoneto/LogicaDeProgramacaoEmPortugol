@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+n1,n2,n3:inteiro
+eq:logico
+es:logico
+validacao:logico
+inicio
+      escreval("testes lógicos.")
+      escreva("digite o primeiro númeoro : ")
+      leia(n1)
+      escreva("digite o segundo número : ")
+      leia(n2)
+      escreva("digite o terceiro número : ")
+      leia(n3)
+      validacao := (n1+n2>n3) e (n1+n3>n2) e (n3+n2>n1)
+      eq:= (n1=n2) e (n2=n3)
+      es:= (n1<>n2) e (n2<>n3) e (n3<>n1)
+      escreval("a condição de existencia do triângulo é verdadeira ou falsa ? : ",validacao)
+      se (validacao= verdadeiro) entao
+      escreval("o triânguo formado pelos lados é equilatero : ", eq)
+      escreva("o triânguo formado pelos lados é escaleno : ", es)
+      senao
+      escreva("para as condiçoes de seu triângulo existir e serem reais, é preciso que pelo menos")
+      escreva(" a soma entre os dois menore lados seja maior do que maior lado.")
+      fimse
+fimalgoritmo

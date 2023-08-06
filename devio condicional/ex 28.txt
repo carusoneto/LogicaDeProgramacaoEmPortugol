@@ -1,0 +1,51 @@
+algoritmo "semnome"
+var
+   genero, anos: inteiro
+   nome: caracter
+   salario: real
+inicio
+      escrevaL("[1] para gênero MASCULINO")
+      escreval("[2] para gênero FEMININO")
+      leia(genero)
+      escolha(genero)
+                     caso 1
+                     escreva(" digite seu nome ")
+                     leia(nome)
+                     escreva(" digite seu salário ")
+                     leia(salario)
+                     escreva(" digite quanto tempo em anos você está na empresa : ")
+                     leia(anos)
+                     se (anos > 0) e (anos <= 10) entao
+                        escreval(" seu tempo de empresa é de",anos," anos")
+                        escreva(" e o seu salário atualizado é de ",salario + (salario*5/100),"$")
+                     senao
+                          se (anos > 10) e (anos <= 20) entao
+                             escreval(" o seu tempo de empresa é de ",anos," anos")
+                             escreva(" e seu salário atualizado é de ",salario + (salario*12/100),"$")
+                          senao
+                             escreval(" o seu tempo de empresa é de ",anos," anos")
+                             escreva(" e seu salário atualizado é de ",salario + (salario*23/100),"$")
+                          fimse
+                     fimse
+                     
+                     caso 2
+                     escreva(" digite seu nome ")
+                     leia(nome)
+                     escreva(" digite seu salário ")
+                     leia(salario)
+                     escreva(" digite quanto tempo em anos você está na empresa : ")
+                     leia(anos)
+                     se (anos > 0) e (anos <= 20) entao
+                        escreval(" seu tempo de empresa é de",anos," anos")
+                        escreva(" e o seu salário atualizado é de ",salario + (salario*3/100),"$")
+                     senao
+                          se (anos > 20) e (anos <= 30) entao
+                             escreval(" o seu tempo de empresa é de ",anos," anos")
+                             escreva(" e seu salário atualizado é de ",salario + (salario*13/100),"$")
+                          senao
+                             escreval(" o seu tempo de empresa é de ",anos," anos")
+                             escreva(" e seu salário atualizado é de ",salario + (salario*25/100),"$")
+                          fimse
+                     fimse
+      fimescolha
+fimalgoritmo

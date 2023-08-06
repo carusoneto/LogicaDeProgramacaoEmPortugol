@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+   hora_dia,hora: real
+inicio
+      escreva(" digite quantas horas de exercicío você faz no dia : ")
+      leia(hora_dia)
+      hora := hora_dia * 30
+      escreval(" isso vai da ",hora," horas por mês")
+      se (hora > 0) e (hora <= 10) entao
+         escreval(" se voce fez ",hora," horas de exercício por mês ")
+         escreval(" e conseguiu juntar ",hora * 2," pontos!")
+         escreval(" você pode trocar seus pontos por ",(hora*2) * 0.05,"$")
+      senao
+           se (hora > 10) e (hora <= 20) entao
+              escreval(" se voce fez ",hora," horas de exercício por mês ")
+              escreval(" e conseguiu juntar ",hora * 5," pontos!")
+              escreval(" você pode trocar seus pontos por ",(hora*5) * 0.05,"$")
+           senao
+                escreval(" se voce fez ",hora," horas de exercício por mês ")
+                escreval(" e conseguiu juntar ",hora * 10," pontos!")
+                escreval(" você pode trocar seus pontos por ",(hora*10) * 0.05,"$")
+           fimse
+      fimse
+fimalgoritmo

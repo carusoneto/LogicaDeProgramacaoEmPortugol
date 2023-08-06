@@ -1,0 +1,12 @@
+algoritmo "profetizei, AMÉM"
+var
+nome:caracter
+salario:real
+inicio
+escreva("digite o nome do funcionário : ")
+leia(nome)
+escreva("digite o valor do salário dele : ")
+leia(salario)
+escreva("o funcionário ", nome, " tem um salário de " ,salario, "$ em junho.")
+
+fimalgoritmo

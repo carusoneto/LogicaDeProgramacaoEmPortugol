@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   ano, idade, ano_nasceu : inteiro
+inicio
+      escreva(" qual o ano atual : ")
+      leia (ano)
+      escreva(" qual o ano que você nasceu : ")
+      leia (ano_nasceu)
+      idade := ano - ano_nasceu
+      se (idade>=21) entao
+         escreval(" idade: ",idade," anos")
+         escreva(" está apto a tirar a carteira de motorista")
+      senao
+           escreva(" você ainda não está apto para tirar a carteira de motorista")
+      fimse
+fimalgoritmo

@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+km:real
+dia:real
+kmapagar:real
+diaapagar:real
+total:real
+inicio
+escreva("digite a quantidade de dias que você está com o carro : ")
+leia(dia)
+escreva("digite a quantidade de km percorridos com o veículo : ")
+leia(km)
+kmapagar := 0.20*km
+diaapagar := 90*dia
+total := kmapagar + diaapagar
+escreva("segundo aos valores informados pelo senhor(a) você irá pagar ",kmapagar,"$ referente aos km rodados e ")
+escreval(diaapagar,"$ referente aos dias com o veículo")
+escreva("logo o valor total a ser pago é de ",total,"$")
+fimalgoritmo

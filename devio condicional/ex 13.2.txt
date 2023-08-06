@@ -1,0 +1,46 @@
+algoritmo "semnome"
+var
+   n1,n2,media : real
+   nome : caracter
+inicio
+      escreva(" digite seu nome : ")
+      leia(nome)
+      escreva(" digite a primeira nota : ")
+      leia(n1)
+      escreva(" digite a segunda nota : ")
+      leia(n2)
+      media := ((n1+n2)/2)
+      escreval(" a média do aluno é de ",media,"!")
+      se (media >= 0) e (media < 2) entao
+         escreval(" a média do aluno é ",media,"!")
+         escreva(" avaliação F")
+      senao
+           se (media >= 2) e (media < 4) entao
+              escreval(" a média do aluno é ",media,"!")
+              escreva(" avaliação E")
+           senao
+                se (media >=4) e (media < 6) entao
+                   escreval(" a média do aluno é ",media,"!")
+                   escreva(" avaliação D")
+                senao
+                     se (media >= 6) e (media < 7) entao
+                        escreval(" a média do aluno é ",media,"!")
+                        escreva(" avaliação C")
+                     senao
+                          se (media >= 7) e (media < 8) entao
+                             escreval(" a média do aluno é ",media,"!")
+                             escreva(" avaliação B")
+                          senao
+                               se (media >=8) e (media < 9) entao
+                                  escreval(" a média do aluno é ",media,"!")
+                                  escreva(" avaliação A")
+                               senao
+                                    escreval(" a média do aluno é ",media,"!")
+                                    escreva(" avaliação A+")
+                               fimse
+                          fimse
+                     fimse
+                fimse
+           fimse
+      fimse
+fimalgoritmo

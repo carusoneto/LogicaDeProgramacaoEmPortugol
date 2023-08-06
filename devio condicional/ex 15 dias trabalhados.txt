@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+dia:inteiro
+diaria:real
+total:real
+inicio
+escreva("digite a quantidade de dias trabalhados : ")
+leia(dia)
+diaria := 8*25
+total := dia * diaria
+escreva("logo o seu salário é de ",total,"$ referente a ",dia," dias trabalhados")
+escreva
+fimalgoritmo

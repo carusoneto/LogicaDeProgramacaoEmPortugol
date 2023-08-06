@@ -1,0 +1,8 @@
+algoritmo "semnome"
+var
+nome:caracter
+inicio
+escreva("digite seu nome: ")
+leia(nome)
+escreva("seja muito bem vindo ", nome," !")
+fimalgoritmo

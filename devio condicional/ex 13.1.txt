@@ -1,0 +1,28 @@
+algoritmo "semnome"
+var
+   n1,n2,media : real
+   nome : caracter
+inicio
+      escreva(" digite seu nome : ")
+      leia(nome)
+      escreva(" digite a primeira nota : ")
+      leia(n1)
+      escreva(" digite a segunda nota : ")
+      leia(n2)
+      media := int((n1+n2)/2)
+      escreval(" a média do aluno é de ",media,"!")
+      escolha(media)
+              caso 1,2,3
+                   escreva(" média ",media," é considerado F")
+              caso 4,5
+                   escreva(" média ",media," é considerado E")
+              caso 6,7
+                   escreva(" média ",media," é considerado D")
+              caso 8,
+                   escreva(" média ",media," é considerado C")
+              caso 9
+                   escreva(" média ",media," é considerado B")
+              caso 10
+                   escreva(" média ",media," é considerado A")
+      fimescolha
+fimalgoritmo
