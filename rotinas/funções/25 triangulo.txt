@@ -1,0 +1,41 @@
+algoritmo "semnome"
+var
+   v1, v2, v3 : inteiro
+   r : logico
+   t : caracter
+funcao tri (a, b, c : inteiro ) : logico
+var
+
+inicio
+       retorne ( v1 + v2 > v3 ) e ( v2 + v3 > v1 ) e ( v3 + v1 > v2 )
+fimfuncao
+funcao defi ( a,b,c : inteiro ) : caracter
+var
+
+inicio
+      se (a = b ) e ( b = c ) entao
+         retorne " EQUILTERO "
+      senao
+           se ( a <> b ) e ( b <> c ) e ( c <> a ) entao
+              retorne " ESCALENO "
+           senao
+                se ( a = b ) e ( c <> a ) ou ( b = c ) e ( a <> b ) ou ( a = c ) e ( b <> a ) entao
+                   retorne " ISOCELES "
+                fimse
+           fimse
+      fimse
+fimfuncao
+inicio
+      escreva(" digite o valor do primeiro segmento : ")
+      leia(v1)
+      escreva(" digite o valor do segundo segmento : ")
+      leia(v2)
+      escreva(" digite o valor do terceiro segmento : ")
+      leia(v3)
+      r := tri ( v1, v2, v3 )
+      t := defi(v1,v2,v3)
+      escreval(" os valores digitados formam um triangulo real ? ",r)
+      se ( r = verdadeiro ) entao
+            escreval(" e ele é um triângulo : ",t)
+      fimse
+fimalgoritmo

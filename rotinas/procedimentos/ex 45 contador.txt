@@ -1,0 +1,29 @@
+algoritmo "semnome"
+var
+   n1, n2, padrao : inteiro
+procedimento cont (a, b, c : inteiro)
+var
+
+inicio
+      se ( a > b ) entao
+                     enquanto ( a >= b ) faca
+                              escreva(a)
+                              a := a - c
+                     fimenquanto
+                  senao
+                       enquanto ( a <= b ) faca
+                              escreva(a)
+                              a := a + c
+                       fimenquanto
+                  fimse
+fimprocedimento
+inicio
+      escreva(" digite um número para começar a contar : ")
+      leia(n1)
+      escreva(" digite um número para o fim da contagem : ")
+      leia(n2)
+      escreva(" digite qual o padrão de salto que você deseja : ")
+      leia(padrao)
+      cont(n1, n2, padrao)
+
+fimalgoritmo

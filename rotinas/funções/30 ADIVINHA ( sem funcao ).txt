@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   num, n, contador : inteiro
+inicio
+      escreval(" TENTE ACERTAR " )
+      escreval(" será sorteado um número entre 1 e 10 ")
+      escreval(" e você só terá 5 chances ")
+      num := 5
+      contador := 0
+      repita
+            escreva(" digite o número : ")
+            leia(n)
+            se ( n = num ) entao
+               contador := 5
+            senao
+                 contador := contador + 1
+            fimse
+      ate ( contador >= 5 )
+      se ( n = num ) entao
+         escreva(" voce acertou o número é ",num)
+      senao
+           escreva(" voce não conseguiu acertar, o número é ",num)
+      fimse
+
+fimalgoritmo

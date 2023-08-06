@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   soma : inteiro
+procedimento somatorio (var a : inteiro)
+var
+   n, contador  : inteiro
+inicio
+        repita
+            escreva(" digite qualquer número : ")
+            leia(n)
+            a := a + n
+            contador := n
+      ate ( contador = 1111 )
+fimprocedimento
+inicio
+      soma := 0
+      somatorio(soma)
+      escreva(" a soma de todos os números digitados é ",soma)
+fimalgoritmo

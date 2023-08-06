@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   ano, r : inteiro
+funcao voto(a : inteiro) : inteiro
+var
+
+inicio
+       retorne 2023 - ano
+fimfuncao
+inicio
+      escreva(" digite o seu ano de nascimento : ")
+      leia(ano)
+      r := voto(ano)
+      se ( r > 18 ) entao
+         escreva(" você tem ",r," anos de idade e já está abito a votar ")
+      senao
+           escreva(" você tem ",r," anos e ainda não está abito a votar ")
+      fimse
+fimalgoritmo

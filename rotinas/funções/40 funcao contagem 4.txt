@@ -1,0 +1,38 @@
+algoritmo "semnome"
+var
+   n, n1, padrao, c : inteiro
+funcao contagemP(var a, b : inteiro) : inteiro
+var
+
+inicio
+      retorne a + b
+fimfuncao
+funcao contagemR(var a, b : inteiro) : inteiro
+var
+
+inicio
+      retorne a - b
+fimfuncao
+inicio
+      escreva(" digite de onde voce quer começar a contagem : ")
+      leia(n)
+      escreva(" digite ate onde quer contar : ")
+      leia(n1)
+      escreva(" digite qual padrao voce quer adotar : ")
+      leia(padrao)
+      se ( n < n1 ) entao
+         enquanto ( n <= n1 ) faca
+                  escreva(n)
+                  c := contagemP(n,padrao)
+                  n := c
+         fimenquanto
+      senao
+           se ( n > n1 ) entao
+              enquanto ( n >= n1 ) faca
+                     escreva(n)
+                     c := contagemR(n,padrao)
+                     n := c
+              fimenquanto
+           fimse
+      fimse
+fimalgoritmo

@@ -1,0 +1,44 @@
+algoritmo "semnome"
+var
+   soma, maior, menor : inteiro
+   divi3 : real
+procedimento somatorio (var s,m1,m2 : inteiro)
+var
+   contador, n : inteiro
+inicio
+      m1 := 0
+      m2 := 100000
+      enquanto ( contador < 8 ) faca
+               escreva(" digite o preço : ")
+               leia(n)
+               se ( n % 3 = 0 ) e ( n > m1 ) entao
+                  divi3 := divi3 + 1
+                  m1 := n
+               senao
+                    se ( n % 3 = 0 ) e ( n < m2 )  entao
+                       divi3 := divi3 + 1
+                       m2 := n
+                    senao
+                         se ( n > m1 ) entao
+                            m1 := n
+                         senao
+                              se ( n < m2 ) entao
+                                 m2 := n
+                              fimse
+                         fimse
+                    fimse
+               fimse
+               s := s + n
+               contador := contador + 1
+      fimenquanto
+
+fimprocedimento
+inicio
+      soma := 0
+      divi3 := 0
+      somatorio(soma, maior, menor)
+      escreval(" a soma de todos os números digitados é ",soma)
+      escreval(" e o total de números divisiveis por 3 é ",divi3)
+      escreval(" o maior número digitao foi ", maior)
+      escreval(" e o menor número digitado foi",menor)
+fimalgoritmo

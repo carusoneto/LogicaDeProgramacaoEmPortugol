@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   n : inteiro
+   r : caracter
+funcao parouimpar(a : inteiro ) : caracter
+var
+
+inicio
+       se ( n > 1 ) e ( n % 2 = 0 ) entao
+          retorne " o seu número é par "
+       senao
+            se ( n > 1 ) e ( n % 2 = 1 ) entao
+               retorne " o seu número é IMPAR "
+            senao
+                 retorne " o seu número não pode ser avaliado "
+            fimse
+       fimse
+fimfuncao
+inicio
+      escreva(" digite um número inteiro e positivo : ")
+      leia(n)
+      r := parouimpar(n)
+      escreva(r)
+fimalgoritmo
+

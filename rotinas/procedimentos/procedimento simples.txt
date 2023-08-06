@@ -1,0 +1,48 @@
+algoritmo "semnome"
+var
+   n,contador, maior_par, maior_impar : inteiro
+procedimento texto()
+var
+
+inicio
+      escreval("----------------------------")
+      escreval("    o número digitado é   ",n)
+      escreval("----------------------------")
+fimprocedimento
+procedimento detector(var a, b, c : inteiro)
+var
+
+inicio
+      para c := 1 ate 10 faca
+
+            escreva(" digite um número qualquer para saber se ele é par ou impar : ")
+            leia(n)
+            limpatela
+
+            texto()
+            se ( n % 2 = 0 ) e ( n > a) entao
+               escreval(" e ele é par ")
+               a := n
+            senao
+                 se ( n % 2 = 1 ) e ( n > b ) entao
+                    escreval(" e ele é impar ")
+                    b := n
+                 senao
+                      se ( n % 2 = 0 ) entao
+                         escreval(" e ele é par ")
+                      senao
+                           escreval(" e ele é impar ")
+                      fimse
+                 fimse
+            fimse
+      fimpara
+fimprocedimento
+inicio
+      texto()
+      maior_par := 0
+      maior_impar := 0
+      detector(maior_par, maior_impar, contador)
+      escreval(" o maior número par digitado foi ",maior_par)
+      escreval(" o maior número impar digitado foi ",maior_impar)
+      escreval(" foram digitados um total de ",contador," números")
+fimalgoritmo

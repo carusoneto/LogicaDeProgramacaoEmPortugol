@@ -1,0 +1,54 @@
+algoritmo "semnome"
+var
+   carro, v_diaria, v_km, dias, km  : real
+procedimento aluguel ()
+var
+
+inicio
+      escolha (carro)
+              caso 1
+
+              escreva(" a quantos dias voce está com o carro ? ")
+              leia( dias )
+              v_diaria :=  dias * 90
+              escreva ( " quantos kilômetros você ja percorreu ? ")
+              leia( km )
+                    se ( km <= 100 ) entao
+                       v_km := km * 0.2
+                       escreval(" você terá que pagar ", v_km," pela distância percorrida ")
+                       escreval(" e ", v_diaria," pela quantidades de dias com o veículo ")
+                    senao
+                         se ( km > 100 ) entao
+                            v_km := km * 0.1
+                            escreval(" você terá que pagar ", v_km," pela distância percorrida ")
+                            escreval(" e ", v_diaria," pela quantidades de dias com o veículo ")
+                         fimse
+                    fimse
+
+              caso 2
+
+              escreva(" a quantos dias voce está com o carro ? ")
+              leia( dias )
+              v_diaria :=  dias * 150
+              escreva ( " quantos kilômetros você ja percorreu ? ")
+              leia( km )
+                    se ( km <= 200 ) entao
+                       v_km := km * 0.3
+                       escreval(" você terá que pagar ", v_km," pela distância percorrida ")
+                       escreval(" e ", v_diaria," pela quantidades de dias com o veículo ")
+                    senao
+                         se ( km > 200 ) entao
+                            v_km := km * 0.25
+                            escreval(" você terá que pagar ", v_km," pela distância percorrida ")
+                            escreval(" e ", v_diaria," pela quantidades de dias com o veículo ")
+                         fimse
+                    fimse
+
+      fimescolha
+fimprocedimento
+inicio
+      escreva(" [1] carro popular ")
+      escreva(" [2] carro de luxo ")
+      leia (carro)
+      aluguel ()
+fimalgoritmo

@@ -1,0 +1,43 @@
+algoritmo "semnome"
+var
+   nome : caracter
+   valor_i, salario, p, temp : real
+   ap : caracter
+funcao prestacao( a, b : real) : real
+var
+    m : real
+inicio
+      m := a * 12
+      retorne b / m
+fimfuncao
+funcao aprovacao(a : real ) : caracter
+var
+    trin : real
+inicio
+      trin := a * (30/100)
+      se ( p < trin ) entao
+         retorne " emprestimo aprovado "
+      senao
+           retorne " emprestimo reprovado "
+      fimse
+fimfuncao
+inicio
+      escreval(" BANCO CARUSO " )
+      escreva(" digite seu nome : ")
+      leia(nome)
+      escreva(" digite qual o valor do imovel que você desja comprar : ")
+      leia(valor_i)
+      escreva(" digite qual o seu salário : ")
+      leia(salario)
+      escreva(" digite em quantos anos você deseja pagar a casa : ")
+      leia(temp)
+      p := prestacao(temp,valor_i)
+      ap := aprovacao(salario)
+      se ( ap = " emprestimo aprovado " ) entao
+         escreval(" o valor da sua parcela ficará em ",p:4:2)
+         escreval(" e ela corresponde a menos que 30% do seu salário, logo",ap)
+      senao
+            escreval(" o valor da sua parcela ficará em ",p:4:2)
+            escreval(" e ela corresponde a mais que 30% do seu salário, logo",ap)
+      fimse
+fimalgoritmo

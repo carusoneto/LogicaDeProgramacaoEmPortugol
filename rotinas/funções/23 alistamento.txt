@@ -1,0 +1,35 @@
+algoritmo "semnome"
+var
+   ano, i, m1, m2 : inteiro
+funcao idade(a : inteiro) : inteiro
+var
+
+inicio
+       retorne 2023 - a
+fimfuncao
+funcao maior18( a : inteiro ) : inteiro
+var
+
+inicio
+       retorne a - 18
+fimfuncao
+funcao menor18 ( a : inteiro ) : inteiro
+var
+
+inicio
+       retorne 18 - a
+fimfuncao
+inicio
+      escreva(" digite o seu ano de nascimeto : ")
+      leia(ano)
+      i := idade(ano)
+      se ( i > 18 ) entao
+         m1 := maior18 ( i )
+         escreva(" voce tem ",i," anos e ja se passaram ",m1," anos de seu alistamento ")
+      senao
+           se ( i < 18 ) entao
+              m2 := menor18 ( i )
+              escreva(" voce tem ",i," anos e ainda faltam ",m2," anos para o seu alistamento ")
+           fimse
+      fimse
+fimalgoritmo

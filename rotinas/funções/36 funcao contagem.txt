@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+   n, contador, c : inteiro
+funcao contagem(var a : inteiro ): inteiro
+var
+
+inicio
+       retorne a + 1
+fimfuncao
+inicio
+      escreva(" digite até onde voce quer contar : ")
+      leia(n)
+      enquanto ( contador <= n ) faca
+               escreva(contador)
+               c := contagem(contador)
+               contador := c
+      fimenquanto
+fimalgoritmo

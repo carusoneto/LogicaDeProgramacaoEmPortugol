@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   salario : real
+   v_imovel : real
+   t : real
+   
+procedimento  emprestimo ( a, b, c : real )
+var
+   v_parcela,  v_aprovado : real
+inicio  
+       c := c * 12
+       v_parcela := b / c
+       v_aprovado := a * (30/100)
+         se ( v_parcela <= v_aprovado ) entao
+            escreval(" o valor da sua parcela é de ",v_parcela:4:2)
+            escreval(", e ela corresponde a menos de 30% de seu salário")
+            escreval(" parabéns seu crédito foi aprovado!")
+         senao
+              escreva(" a sua parcela ficou muita alta para o seu valor de salário mensal ")
+         fimse
+fimprocedimento
+inicio
+      escreva(" digite qual o seu salário mensal : ")
+      leia(salario)
+      escreva(" digite qual o valor do imóvel pretendido : ")
+      leia(v_imovel)
+      escreva(" em quanto tempo você deseja pagar a casa : ")
+      leia(t)
+      emprestimo(salario, v_imovel, t)
+fimalgoritmo

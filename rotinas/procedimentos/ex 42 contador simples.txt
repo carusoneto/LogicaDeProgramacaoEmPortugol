@@ -1,0 +1,17 @@
+algoritmo "contador simples"
+var
+   contador : inteiro
+procedimento repete()
+var
+
+inicio
+      enquanto ( contador <= 18 ) faca
+               escreva(contador)
+               contador := contador + 3
+      fimenquanto
+fimprocedimento
+inicio
+      contador := 0
+      repete ()
+      escreva(" acabou !")
+fimalgoritmo

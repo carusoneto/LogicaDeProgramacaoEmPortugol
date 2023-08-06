@@ -1,0 +1,36 @@
+algoritmo "semnome"
+var
+   contador, n, acima5, divi3, c : inteiro
+funcao contagem(a : inteiro) : inteiro
+var
+
+inicio
+       retorne a + 1
+fimfuncao
+inicio
+      contador := 1
+      acima5 := 0
+      divi3 := 0
+      escreval(" SORTEIO DOS 20 ")
+      escreva(" digite os números : ")
+      enquanto ( contador <= 20 ) faca
+               leia(n)
+               c := contagem(contador)
+               contador := c
+               se ( n < 5 ) e ( n % 3 = 0 ) entao
+                  divi3 := divi3 + 1
+               senao
+                    se ( n > 5 ) e ( n % 3 = 0 ) entao
+                       divi3 := divi3 + 1
+                       acima5 := acima5 + 1
+                    senao
+                         se ( n > 5 ) entao
+                            acima5 := acima5 + 1
+                         fimse
+                    fimse
+               fimse
+      fimenquanto
+      escreval(" dentro dos números sorteados foram digitados um total de ",acima5," maiores que cinco ")
+      escreval(" e também dentro dos números digitados existem ",divi3," números divisiveis por três")
+
+fimalgoritmo

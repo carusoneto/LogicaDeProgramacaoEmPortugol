@@ -1,0 +1,46 @@
+algoritmo "semnome"
+var
+	soma_h, maior, homens, mulher_j : inteiro
+procedimento homens_mulheres( var a, b, c, d : inteiro )
+var
+	idade : inteiro
+	resp, genero : caracter
+inicio
+	repita
+		escreva(" qual o seu gênero [m] ou [f] : ")
+		leia(genero)
+		escreva(" qual sua idade : ")
+		leia(idade)
+		se ( genero = "m" ) e ( idade > a) entao
+			b := b + 1 
+			d := d + idade 
+			a := idade
+		senao
+			se ( genero = "m" ) entao
+				d := d + idade
+				b := b + 1 
+			senao
+				se ( genero = "f" ) e ( idade > a ) entao
+					a := idade 
+				senao
+					se ( genero = "f" ) e ( idade < c ) entao
+						c := idade 
+					fimse
+				fimse
+			fimse
+		fimse
+escreva(" quer continuar [s] ou [n] : ")
+leia ( resp ) 
+ate ( resp = "n" ) 
+fimprocedimento 
+inicio 
+	soma_h := 0 
+	maior := 0 
+	homens := 0 
+	mulher_j := 100
+	homens_mulheres(maior, homens, mulher_j, soma_h)
+	escreval(" a maior idade digitada foi ",maior)
+	escreval(" um total de ",homens," foram cadastrados ")
+	escreval(" a mulher mais jovem cadastrada tem ",mulher_j," anos")
+	escreval(" a media de idade dos homens cadastrados é de ",soma_h / homens:4:2,")
+fimalgoritmo

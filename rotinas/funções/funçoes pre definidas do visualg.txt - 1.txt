@@ -1,0 +1,22 @@
+funçoes pre-definidas do visualg 
+
+compr = me diz quantos caracteres tem a minha estring - compr é de COMPRIMENTO
+	compr(site) - me diz quantos caracteres tem a palavra 
+
+copia(site, 6, 2) = me diz, da onde eu vou começar a contar os caracteres da palavra referenciada dentro da função 
+	copia(site, 6 , 2) - começa da sexta letra da palavra da variavel site e conta duas letras depois dela 
+
+maiusc(site) = coloca todo o caracter que ta dentro da variavel site em maiúscula 
+	maiusc(site) 
+	
+minusc(site) = coloca todo o caracter que ta dentro da variavel site em minusculas 
+	minusc(site)
+
+pos("video", site) = aqui essa funcao vai procurar a palavra "video" dentro da variavel site
+	pos("video", site) - vai dizer que a palavra "video" começa na 8 letra da variavel site ( que é a palvra "cursoemvideo")
+
+asc(c) - que me retorna o código de cada letra 
+	asc(c) - 67 
+
+carac(67) - que ao inves de ler o caractere e retornar código, ler código e retorna caracter
+	carac(67) -  c 

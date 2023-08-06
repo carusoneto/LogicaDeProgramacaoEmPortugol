@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+   p : inteiro
+   r : real
+funcao promocao(a : inteiro ) : real
+var
+   d : real
+inicio
+       d := a * (5/100)
+       retorne a - d
+fimfuncao
+inicio
+      escreva(" digite o valor do produto : ")
+      leia(p)
+      r := promocao(p)
+      escreva(" o valor do produto com 5% de desconto é ",r,"$")
+fimalgoritmo

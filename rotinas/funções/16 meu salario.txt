@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+   d : inteiro
+   s : real
+funcao salario(a : inteiro) : real
+var
+   d : inteiro
+inicio
+      d := 8 * 25
+      retorne a * d
+fimfuncao
+inicio
+      escreva(" digite quantos dias você trabalhou esse mês : ")
+      leia(d)
+      s := salario(d)
+      escreva(" o seu salário é ",s,"$")
+fimalgoritmo

@@ -1,0 +1,28 @@
+algoritmo "semnome"
+var
+   n1, n2 : inteiro
+   r : caracter
+funcao compara( a, b : inteiro ) :caracter
+var
+
+inicio
+       se ( a > b ) entao
+          retorne " o primeiro valor é o maior "
+       senao
+            se ( b > a ) entao
+               retorne " o segundo valor é o maior "
+            senao
+                 se ( a = b ) entao
+                    retorne " os dois valore são iguais "
+                 fimse
+            fimse
+       fimse
+fimfuncao
+inicio
+      escreva(" digite um valor : ")
+      leia(n1)
+      escreva(" digite outro valor : ")
+      leia(n2)
+      r := compara(n1,n2)
+      escreva(r)
+fimalgoritmo

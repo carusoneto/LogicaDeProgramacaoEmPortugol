@@ -1,0 +1,24 @@
+algoritmo "maior que "
+var
+   n1, n2 : inteiro
+procedimento comparacao(a, b : inteiro)
+var
+
+inicio
+      se ( a > b ) entao
+         escreva(" o primeiro valor digitado é maior que o segundo valor ")
+      senao
+           se ( b > a ) entao
+              escreva(" o segundo valor digitado é maior que o primeiro ")
+           senao
+                escreva(" nao temos valores maiores, os dois são iguais ")
+           fimse
+      fimse
+fimprocedimento
+inicio
+      escreva(" digite um número qualquer : ")
+      leia(n1)
+      escreva(" digite outro número : ")
+      leia(n2)
+      comparacao(n1, n2)
+fimalgoritmo

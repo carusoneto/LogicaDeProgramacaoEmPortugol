@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   d : inteiro
+   k, dias, km : real
+funcao v_dias(a : inteiro ) : real
+var
+
+inicio
+       retorne a * 90
+fimfuncao
+funcao v_km(b : real) : real
+var
+
+inicio
+      retorne b * 0.20
+fimfuncao
+inicio
+      escreva(" digite a quantos dias voce está com o carro : ")
+      leia(d)
+      escreva(" digite quantos kilômetros foram percorridos : ")
+      leia(k)
+      dias := v_dias(d)
+      km := v_km(k)
+      escreval(" foi percorrido um total de ",k," quilômetros e será pago um total de ",km,"$")
+      escreval(" o carro ficou um total de ",d," dias em sua posse, e será pago um total de ",dias,"$")
+fimalgoritmo

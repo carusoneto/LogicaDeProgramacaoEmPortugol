@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+   n1, n2, s : inteiro
+funcao soma (n1,n2 : inteiro) : inteiro
+       retorne n1 + n2
+fimfuncao
+inicio
+      escreva(" digite um número qualquer : ")
+      leia(n1)
+      escreva(" digite outro número : ")
+      leia(n2)
+      s := soma(n1, n2)
+      escreva(s)
+fimalgoritmo

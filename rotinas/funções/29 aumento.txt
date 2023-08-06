@@ -1,0 +1,34 @@
+algoritmo "semnome"
+var
+   nome : caractere
+   salario, au : real
+   ano : inteiro
+funcao aumento(b : real) : real
+var
+    v : real
+inicio
+       se ( ano <= 3 ) entao
+          v := b * ( 3/100)
+          retorne b + v
+       senao
+            se ( ano > 3 ) e ( ano <= 10 ) entao
+               v := b * ( 12.5/100)
+               retorne b + v
+            senao
+                 se ( ano > 10 ) entao
+                    v := b * ( 20/100 )
+                    retorne b + v
+                 fimse
+            fimse
+       fimse
+fimfuncao
+inicio
+      escreva(" digite seu nome : ")
+      leia(nome)
+      escreva(" digite o valor do seu salário ")
+      leia(salario)
+      escreva(" digite a quantos anos você está na empresa ")
+      leia(ano)
+      au := aumento(salario)
+      escreva(" voce ganhou um aumento, e seu salário agora é ",au:4:2)
+fimalgoritmo

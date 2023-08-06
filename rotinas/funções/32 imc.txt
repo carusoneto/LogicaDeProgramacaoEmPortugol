@@ -1,0 +1,44 @@
+algoritmo "semnome"
+var
+   peso, altura, imc : real
+   r : caracter
+funcao cal(a, b : real ) : real
+var
+
+inicio
+      retorne a  / b^2
+fimfuncao
+funcao resp (a : real ) : caracter
+var
+
+inicio
+      se ( a <= 18.5 ) entao
+       retorne " abaixo do peso "
+      senao
+           se ( a > 18.5 ) e ( a <= 25 ) entao
+              retorne " peso ideal "
+           senao
+                se ( a > 25 ) e ( a <= 30 ) entao
+                   retorne " sobre peso "
+                senao
+                     se ( ( a > 30 ) e ( a <= 40 ) entao
+                        retorne " obsidade "
+                     senao
+                           se ( a > 40 ) entao
+                              retorne " obsidade morbida "
+                           fimse
+                     fimse
+                fimse
+           fimse
+      fimse
+fimfuncao
+inicio
+      escreva(" digite seu peso : ")
+      leia(peso)
+      escreva(" digite sua altura : ")
+      leia(altura)
+      imc := cal(peso,altura)
+      r := resp(imc)
+      escreval(" o seu indice de massa corpórea é ",imc:4:2)
+      escreval(" e seu estatus é de : ",r)
+fimalgoritmo

@@ -1,0 +1,43 @@
+algoritimo "semnome"
+var
+	soma, menor, contador, par : inteiro
+	media : real
+	resp : caracter
+procedimento pares(var a, b, c, d : inteiro)
+var
+	idade : inteiro
+inicio
+	enquanto( resp = "s" ) faca 
+	escreva(" digite sua idade : ")
+	leia(idade)
+	a := a + idade 
+	c := c + 1 
+	se ( idade % 2 = 0 ) e ( idade < b ) entao 
+		d := d + 1 
+		b := idade 
+	senao
+		se ( idade % 2 = 0 ) entao
+			d := d + 1 
+		senao
+			se ( idade < b ) entao
+				b := idade 
+			fimse
+		fimse
+	fimse
+	escreva(" voce deseja continuar a pesquisa [s] [n] : ")
+	leia( resp ) 
+	fimenquanto
+fimprocedimento
+inicio
+	resp := "s"
+	soma := 0 
+	menor := 1000
+	contador := 0
+	par := 0 
+	pares(soma, menor, contador, par)
+	media := soma / idade 
+	escreval(" so somatório de todas as idades é ",soma)
+	escreval(" o menor número digitado é ",menor)
+	escreval(" a media entre todos os valores é de ",media:4:2)
+	escreval(" um total de ",par," são números pares")
+fimalgoritmo 

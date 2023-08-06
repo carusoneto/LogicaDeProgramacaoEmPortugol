@@ -1,0 +1,51 @@
+algoritmo "semnome"
+var
+   contador, soma, maior18, menor5, maior_idade : inteiro
+procedimento medidor(var a, b, c : inteiro)
+var
+   nome : caracter
+   idade, maior : inteiro
+inicio
+      maior := 0
+       repita
+            escreva(" digite seu nome : ")
+            leia(nome)
+            escreva(" digite sua idade : ")
+            leia(idade)
+            a := a + idade
+            se ( idade > 18 ) e ( idade > maior ) entao
+               b := b + 1
+               maior := idade
+            senao
+                 se ( idade > 18 ) entao
+                    b := b + 1
+                 senao
+                       se ( idade > maior ) e ( idade < 5 )  entao
+                          d := idade
+                          c := c + 1
+                       senao
+                            se ( idade > maior ) entao
+                               d := idade
+                            senao
+                                se ( idade < 5 ) e ( idade <> 0 ) entao
+                                   c := c + 1
+                                fimse
+                            fimse
+                       fimse
+                 fimse
+            fimse
+            contador := contador + 1
+      ate ( contador = 10 )
+      maior_idade := maior
+fimprocedimento
+inicio
+      soma := 0
+      maior18 := 0
+      menor5 := 0
+      maior_idade := 0
+      medidor(soma, maior18, menor5)
+      escreval(" a média de todas as idade digitadas é : ",soma / 10)
+      escreval(" foram um total de ",maior18," pessoas maiores que 18 anos ")
+      escreval(" foram um total de ",menor5," pessoas menores que 5 anos ")
+      escreval(" e a maior idade registrada foi ",maior_idade)
+fimalgoritmo

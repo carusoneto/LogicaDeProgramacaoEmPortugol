@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   n, ant, sus : inteiro
+funcao antecessor(n : inteiro) : inteiro
+var
+
+inicio
+       retorne n - 1
+fimfuncao
+funcao sucessor(n : inteiro) : inteiro
+var
+
+inicio
+      retorne n + 1
+fimfuncao
+inicio
+      escreva(" digite um número qualquer : ")
+      leia(n)
+      ant := antecessor(n)
+      sus := sucessor(n)
+      escreva(" o número digitado é ",n," o seu antecessor é ",ant," e o sucessor é ",sus)
+fimalgoritmo

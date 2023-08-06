@@ -1,0 +1,29 @@
+algoritmo "semnome"
+var
+   contador, n, maior, menor, c : inteiro
+funcao contagem ( a : inteiro ) : inteiro
+var
+
+inicio
+       retorne a + 1
+fimfuncao
+inicio
+      contador := 1
+      maior := 0
+      menor := 1000000
+      escreval("digite preços aleatórios de produtos aleatórios : ")
+      enquanto ( contador <= 8 ) faca
+               leia(n)
+               c := contagem(contador)
+               contador := c
+               se ( n > maior ) entao
+                  maior := n
+               senao
+                    se ( n < menor ) entao
+                       menor := n
+                    fimse
+               fimse
+      fimenquanto
+      escreval(" o maior número digitado foi ",maior)
+      escreval(" o menor número digitado foi ",menor)
+fimalgoritmo

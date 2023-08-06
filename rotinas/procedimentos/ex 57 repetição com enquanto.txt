@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   contador, idade, soma, maior_21 : inteiro
+   resp : caracter
+   media : real
+inicio
+      resp := "s"
+      soma := 0
+      maior_21 := 0
+      enquanto ( resp = "s" ) faca
+               escreva(" digite sua idade : ")
+               leia(idade)
+               soma := soma + idade
+               contador := contador + 1
+               se ( idade > 21 ) entao
+                  maior_21 := maior_21 + 1
+               fimse
+               escreva(" voce deseja continuar a pesquisa [s] ou [n] : ")
+               leia(resp)
+      fimenquanto
+      media := soma / contador
+      escreval(" foram digitadas um total de ",contador," idades")
+      escreval(" a media das idades digitadas é ",media:4:2)
+      escreval(" um total de ",maior_21," pesoas tem mais que 21 anos")
+fimalgoritmo

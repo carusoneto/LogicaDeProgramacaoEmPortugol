@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   nome : caracter
+   nota1, nota2 : real
+procedimento media(a, b : real)
+var
+   n : caracter
+   m : real
+inicio
+      n := nome
+      m := (a+b)/ 2
+      se ( m < 5 ) entao
+         escreva(" o aluno ",n," tem média ",m:4:2," e está REPROVADO ")
+      senao
+           se ( m >= 5 ) e ( m < 7 ) entao
+              escreva(" o aluno ",n," tem média ",m:4:2," e está de RECUPERAÇÃO ")
+           senao
+                escreva(" o aluno ",n," tem média ",m:4:2," e está APROVADO ")
+           fimse
+      fimse
+fimprocedimento
+inicio
+      escreva(" o nome do aluno : ")
+      leia(nome)
+      escreva(" digite a primeira nota : ")
+      leia(nota1)
+      escreva(" digite a segunda nota : ")
+      leia(nota2)
+      media(nota1, nota2)
+fimalgoritmo

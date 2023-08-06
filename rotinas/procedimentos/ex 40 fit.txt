@@ -1,0 +1,38 @@
+algoritmo "fit"
+var
+   h_dia, dias : inteiro
+   total : real
+procedimento fit(var t : real)
+var
+   dias_mes, horas_mes, pontos : inteiro
+inicio
+      dias_mes := dias * 4
+      horas_mes := dias_mes * h_dia
+                se ( horas_mes <= 10 ) entao
+                   escreval(" a cada hora que você praticou exercício ganhará 2 pontos ")
+                   pontos := horas_mes * 2
+                   escreval(" logo você acumulou ",pontos,"!")
+                senao
+                     se ( horas_mes > 10 ) e ( horas_mes <= 20 ) entao
+                        escreval(" a cada hora que você praticou exercício ganhará 5 pontos ")
+                        pontos := horas_mes * 5
+                        escreval(" logo você acumulou ",pontos,"!")
+                     senao
+                          se ( horas_mes > 20 ) entao
+                          escreval(" a cada hora que você praticou exercício ganhará 10 pontos ")
+                          pontos := horas_mes * 10
+                          escreval(" logo você acumulou ",pontos,"!")
+                          fimse
+                     fimse
+                fimse
+                t := pontos * 0.5
+fimprocedimento
+inicio
+      escreval(" VIDA FIT ")
+      escreva(" digite quantas horas você pratica exercício por dia : ")
+      leia(h_dia)
+      escreva(" quantos dias por semana : ")
+      leia(dias)
+      fit(total)
+      escreval(" logo o seu valor em reais, relativo a troca de seus pontos é ",total,"$")
+fimalgoritmo

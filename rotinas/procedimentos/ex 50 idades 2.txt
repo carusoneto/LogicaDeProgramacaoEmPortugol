@@ -1,0 +1,49 @@
+algoritmo "semnome"
+var
+   contador, homens, mulheres, soma_h, soma, m20 : inteiro
+   media_h, media : real
+procedimento idades(var a, b, c, d, g, f  : inteiro)
+var
+   sexo : caracter
+   idade : inteiro
+inicio
+      repita
+            escreva(" qual seu sexo [m] ou [f] : ")
+            leia(sexo)
+            escreva(" qual sua idade : ")
+            leia(idade)
+            d := d + idade
+            se ( sexo = "m" ) entao
+               a := a + 1
+               g := g + idade
+            senao
+                 se ( sexo = "f" ) e ( idade > 20 ) entao
+                    b := b + 1
+                    c := c + 1
+                 senao
+                      se ( sexo = "f" ) entao
+                         b := b + 1
+                      fimse
+                 fimse
+            fimse
+      f := f + 1
+      ate ( f = 5 )
+fimprocedimento
+inicio
+      mulheres := 0
+      homens := 0
+      soma_h := 0
+      soma := 0
+      contador := 0
+      m20 := 0
+      
+      idades(homens, mulheres, m20, soma, soma_h, contador)
+      
+      media_h := soma_h / homens
+      media := soma / contador
+      escreval(" foram registrados um total de ",homens," homens ")
+      escreval(" foram registradas um total de ",mulheres," mulheres")
+      escreval(" a média de idade do grupo é de ",media)
+      escreval(" a média de idade do grupo dos homens é de ",media_h)
+      escreval(" e um total de ",m20," mulheres são maiores que 20 anos")
+fimalgoritmo

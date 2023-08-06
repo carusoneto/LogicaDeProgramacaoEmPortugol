@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   a, l, m2 : inteiro
+   t : real
+funcao area( a, b : inteiro ): inteiro
+var
+
+inicio
+      retorne a * b
+fimfuncao
+funcao tinta(a : inteiro ) : real
+var
+
+inicio
+      retorne m2 / 2
+fimfuncao
+inicio
+      escreva(" digite a altura da sua parede : ")
+      leia(a)
+      escreva(" digite a largura de sua parede : ")
+      leia(l)
+      m2 := area(a,l)
+      escreval(" a sua parede tem ",m2," metros quadrados")
+      t := tinta(m2)
+      escreval(" e será preciso uma quantidade de ",t," galões de tinta para pintar a parede")
+fimalgoritmo

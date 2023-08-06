@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   contador : inteiro
+procedimento repete()
+var
+soma : inteiro
+inicio
+      contador := 1
+      soma := 0
+
+      enquanto ( contador <> 0 ) e (contador <> 10) faca
+               escreva(" digite um número qualquer : ")
+               leia(contador)
+               soma := soma + contador
+      fimenquanto
+fimprocedimento
+inicio
+      repete ()
+      escreva(" acabou !")
+fimalgoritmo

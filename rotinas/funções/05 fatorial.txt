@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   n, r : inteiro
+funcao fatorial (a : inteiro ) : inteiro
+var
+   contador, r : inteiro
+inicio
+      r := 1
+      para contador := 1 ate a faca
+           r := r * contador
+      fimpara
+      retorne r
+fimfuncao
+inicio
+      escreva(" digite um número para ser cauculado seu fatorial : ")
+      leia(n)
+      r := fatorial(n)
+      escreva(r)
+fimalgoritmo

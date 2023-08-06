@@ -1,0 +1,60 @@
+algoritmo "aumento"
+var
+   nome : caracter
+   salario, temp, n_salario : real
+   genero : inteiro
+inicio
+      escreva(" qual o seu gênero [1 - masculino ] ou [2 - feminino] : ")
+      leia(genero)
+      escolha (genero)
+            caso 1
+                   escreva(" digite seu nome : ")
+                   leia(nome)
+                   escreva(" digite qual o seu salário : ")
+                   leia(salario)
+                   escreva(" digite quanto tempo você está na empresa (anos) : ")
+                   leia(temp)
+                             se (temp <= 15 ) entao
+                                salario := salario + ( salario * 5/100 )
+                                escreval(" pelo seu tempo na empresa de ",temp)
+                                escreval(" voce recebera um aumento de ",salario,"$")
+                             senao
+                                  se ( temp > 15 ) e (temp <= 20 ) entao
+                                     salario := salario + ( salario * 15/100 )
+                                     escreval(" pelo seu tempo na empresa de ",temp)
+                                     escreval(" voce recebera um aumento de ",salario,"$")
+                                  senao
+                                       se ( temp > 20 ) entao
+                                             salario := salario + ( salario * 20/100 )
+                                             escreval(" pelo seu tempo na empresa de ",temp)
+                                             escreval(" voce recebera um aumento de ",salario,"$")
+                                       fimse
+                                  fimse
+                             fimse
+
+              caso 2
+                   escreva(" digite seu nome : ")
+                   leia(nome)
+                   escreva(" digite qual o seu salário : ")
+                   leia(salario)
+                   escreva(" digite quanto tempo você está na empresa : ")
+                   leia(temp)
+                             se (temp <= 20 ) entao
+                                salario := salario + ( salario * 3/100 )
+                                escreval(" pelo seu tempo na empresa de ",temp)
+                                escreval(" voce recebera um aumento de ",salario,"$")
+                             senao
+                                  se ( temp > 20 ) e (temp <= 30 ) entao
+                                     salario := salario + ( salario * 13/100 )
+                                     escreval(" pelo seu tempo na empresa de ",temp)
+                                     escreval(" voce recebera um aumento de ",salario,"$")
+                                  senao
+                                       se ( temp > 30 ) entao
+                                             salario := salario + ( salario * 25/100 )
+                                             escreval(" pelo seu tempo na empresa de ",temp)
+                                             escreval(" voce recebera um aumento de ",salario,"$")
+                                       fimse
+                                  fimse
+                             fimse
+      fimescolha
+fimalgoritmo

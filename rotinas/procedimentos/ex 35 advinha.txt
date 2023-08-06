@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+   num : inteiro
+procedimento advinha()
+var
+   n : inteiro
+inicio
+      repita
+            escreva(" tente acertar : ")
+         leia(n)
+      ate ( n = num )
+fimprocedimento
+inicio
+      num := 5
+      escreval(" vou sortear um número entre 1 e 5 ")
+      advinha()
+      escreval(" você acertou, o número é o ",num,", parabéns ")
+fimalgoritmo

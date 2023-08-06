@@ -1,0 +1,10 @@
+algoritmo "semnome"
+var
+   a : logico
+   n : inteiro
+inicio
+      escreva(" digite um numero maior que 10 : ")
+      leia(n)
+      a := n > 10
+      escreva(a)
+fimalgoritmo

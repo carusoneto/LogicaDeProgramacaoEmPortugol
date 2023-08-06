@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   contador, c, soma : inteiro
+funcao contagem ( a : inteiro ) : inteiro
+var
+
+inicio
+       retorne a - 50
+fimfuncao
+inicio
+      contador := 500
+      soma := 0
+      enquanto ( contador >= 1 ) faca
+               soma := soma + contador
+               escreva(contador," +")
+               c := contagem(contador)
+               contador := c
+      fimenquanto
+      escreva(" a soma de todos os números contados foi ",soma)
+fimalgoritmo

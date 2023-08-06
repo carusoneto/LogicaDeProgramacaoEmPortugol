@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   genero, salario, somaM, somaF : inteiro
+   resp : caracter
+inicio
+      somaM := 0
+      somaF := 0
+      escreval(" pesquisa de montante salarial da santuriu : ")
+      repita
+            escreva(" digite seu genero [1] masculino ou [2] feminino : ")
+            leia(genero)
+            escreva(" digite qual o valor do seu salário : ")
+            leia(salario)
+            escreva(" voce deseja continuar a pesquisa [sim] ou [nao] : ")
+            leia(resp)
+            se ( genero = 1 ) entao
+               somaM := somaM + salario
+            senao
+                 se ( genero = 2 ) entao
+                    somaf := somaF + salario
+                 fimse
+            fimse
+      ate ( resp = "nao")
+      escreval(" a soma de salario de todos os homens cadastrados é de : ",somaM)
+      escreval(" e a soma de salario de todas as mulheres cadastradas é de : ",somaf)
+fimalgoritmo

@@ -1,0 +1,48 @@
+algoritmo "semnome"
+var
+   contador, n, c, homens, somaM, somaTOTAL, mulheres, m20 : inteiro
+   sexo : caracter
+funcao contagem( a : inteiro ) : inteiro
+var
+
+inicio
+       retorne a + 1
+fimfuncao
+inicio
+      contador := 1
+      homens := 0
+      somaM := 0
+      somaTOTAL := 0
+      mulheres := 0
+      m20 := 0
+      escreval(" digite a idade e o sexo de 5 pessoas para uma breve pesquisa : ")
+      enquanto ( contador <= 5 ) faca
+               escreva(" digite o sexo [m] ou [f] : ")
+               leia(sexo)
+               escreva(" digite a idade : ")
+               leia(n)
+               c := contagem(contador)
+               contador := c
+               se ( sexo = "m" ) entao
+                  homens := homens + 1
+                  somaM := somaM + n
+                  somaTOTAL := somaTOTAL + n
+               senao
+                    se ( sexo = "f" ) e ( n > 20 ) entao
+                       mulheres := mulheres + 1
+                       m20 := m20 + 1
+                       somaTOTAL := somaTOTAL + n
+                    senao
+                          se ( sexo = "f" ) entao
+                            mulheres := mulheres + 1
+                            somaTOTAL := somaTOTAL + n
+                          fimse
+                    fimse
+               fimse
+      fimenquanto
+      escreval(" o total de homens cadastrados é de : ",homens)
+      escreval(" a media de idade somente dos homens é de : ",somaM / homens:4:2)
+      escreval(" o total de mulheres cadastradas é de : ",mulheres)
+      escreval(" e a quantidade de mulheres maiores que 20 anos é de : ",m20)
+      escreval(" a media de todas as idades digitadas é de ",somaTOTAL / contador:4:2)
+fimalgoritmo

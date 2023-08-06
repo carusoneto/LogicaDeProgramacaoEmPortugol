@@ -1,0 +1,35 @@
+algoritmo "semnome"
+var
+   peso, altura : real
+procedimento imc ( a ,b : real )
+var
+   indice : real
+inicio
+      indice := a / b^2
+      se ( indice <= 18.5 ) entao
+         escreva(" ABAIXO DO PESO ")
+      senao
+         se ( indice > 18.5 ) e ( indice <= 25 ) entao
+            escreva(" PESO IDEAL ")
+         senao
+            se ( indice > 25 ) e ( indice <= 30 ) entao
+               escreva(" SOBREPESO ")
+            senao
+               se ( indice > 30 ) e ( indice <= 40 ) entao
+                  escreva(" OBESIDADE ")
+               senao
+                    se ( indice > 40 ) entao
+                       escreva(" OBESIDADE MORBIDA ")
+                    fimse
+               fimse
+            fimse
+         fimse
+      fimse
+fimprocedimento
+inicio
+      escreva(" digite seu peso : ")
+      leia(peso)
+      escreva(" digite sua altura : ")
+      leia(altura)
+      imc (peso, altura)
+fimalgoritmo

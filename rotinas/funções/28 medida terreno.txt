@@ -1,0 +1,35 @@
+algoritmo "semnome"
+var
+   l, c , m : real
+   r : caracter
+funcao quadrado(a,b : real ) : real
+var
+
+inicio
+       retorne a * b
+fimfuncao
+funcao class(a : real) : caracter
+var
+
+inicio
+       se ( a <= 100 ) entao
+          retorne " TERRENO POPULAR "
+       senao
+            se ( a > 100 ) e ( a <= 500 ) entao
+               retorne " TERRENO MASTER "
+            senao
+                 se ( a > 500 ) entao
+                    retorne " TERRRENO VIP "
+                 fimse
+            fimse
+       fimse
+fimfuncao
+inicio
+      escreva(" digite a largura do seu terreno : ")
+      leia(l)
+      escreva(" digite o comprimento do seu terreno : ")
+      leia(c)
+      m := quadrado(l,c)
+      r := class(m)
+      escreva(" seu terreno tem ",m," metros quadrados e ele é classificado como ",r)
+fimalgoritmo

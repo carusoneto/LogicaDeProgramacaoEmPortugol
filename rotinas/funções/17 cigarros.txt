@@ -1,0 +1,27 @@
+algoritmo "semnome"
+var
+   c, f, r : inteiro
+   t : real
+funcao totcigarros(a, b : inteiro) : inteiro
+var
+     dias : inteiro
+inicio
+      dias := b * 365
+      retorne dias * a
+fimfuncao
+funcao tempoperdido(a : inteiro ) : real
+var
+
+inicio
+       retorne a * 0.166667
+fimfuncao
+inicio
+      escreva(" quantos cigarros você fuma por dia : ")
+      leia(c)
+      escreva(" a quantos anos você fuma : ")
+      leia(f)
+      r := totcigarros(c, f)
+      t := tempoperdido(r)
+      escreval(" você perdeu um total de ",t:4:2," dias da sua vida ")
+      escreval( " que isso totaliza ",t / 24 :4:2," de dias perdidos ")
+fimalgoritmo

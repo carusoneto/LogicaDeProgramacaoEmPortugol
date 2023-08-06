@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   n, d : inteiro
+   t : real
+funcao dobro(n : inteiro) : inteiro
+var
+
+inicio
+       retorne n * 2
+fimfuncao
+funcao terca(n : inteiro) : real
+var
+
+inicio
+      retorne n / 3
+fimfuncao
+inicio
+      escreva(" digite um número qualquer : ")
+      leia(n)
+      d := dobro(n)
+      t := terca(n)
+      escreva(" o número digitado é ",n," e o seu dobro é ",d," e a sua terça parte é ",t:4:2)
+fimalgoritmo

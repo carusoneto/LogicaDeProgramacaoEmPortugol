@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+   ano : inteiro
+   r : caracter
+funcao bis(a : inteiro) : caracter
+var
+
+inicio
+      se ( a % 400 = 0 ) e ( a % 100 = 0 ) e ( a % 4 = 0 ) entao
+         retorne " o seu ano é bissexto "
+      senao
+           se ( a % 100 > 1 ) e ( a % 4 = 0 ) entao
+              retorne " o seu ano é bissexto "
+           senao
+                retorne " o seu ano NÃS É bissexto "
+           fimse
+      fimse
+fimfuncao
+inicio
+      escreva(" digite a data de um ano qualquer para saber se ele é bissexto : ")
+      leia(ano)
+      r := bis(ano)
+      escreva(r)
+fimalgoritmo

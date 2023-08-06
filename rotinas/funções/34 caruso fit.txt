@@ -1,0 +1,41 @@
+algoritmo "semnome"
+var
+   dias, horas, horasdomes : inteiro
+   pontos, v : real
+funcao mes(a, b : inteiro ) : real
+var
+   dias_mes : inteiro
+   horas_mes : inteiro
+inicio
+      dias_mes := a * 4
+      horas_mes := dias_mes * b
+      horasdomes := horas_mes
+      se ( horas_mes <= 10 ) entao
+         retorne horas_mes * 2
+      senao
+           se ( horas_mes > 10 ) e ( horas_mes <= 20 ) entao
+              retorne horas_mes * 5
+           senao
+                se ( horas_mes > 20 ) entao
+                   retorne horas_mes * 10
+                fimse
+           fimse
+      fimse
+fimfuncao
+funcao valor(a : real ) : real
+var
+
+inicio
+       retorne a * (5/100)
+fimfuncao
+inicio
+      escreval(" CARUSO FITS ")
+      escreva(" digite quantos dias de execício voce faz por semana : ")
+      leia(dias)
+      escreva(" quantas horas voce gasta fazendo seus exercicios : ")
+      leia(horas)
+      pontos := mes(dias,horas)
+      v := valor(pontos)
+      escreval(" a quantidade de horas gasta por voce durante um mes de exercicio é de ",horasdomes," horas")
+      escreval(" e voce conseguiu juntar ",pontos," pontos e pode troca-los por ",v,"$ reais")
+fimalgoritmo

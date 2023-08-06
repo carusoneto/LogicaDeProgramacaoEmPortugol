@@ -1,0 +1,26 @@
+algoritmo "semnome"
+var
+   soma : inteiro
+   divi3 : real
+procedimento somatorio (var s : inteiro)
+var
+   contador, n, n1 : inteiro
+inicio
+      enquanto ( contador < 7 ) faca
+               escreva(" digite um número qualquer : ")
+               leia(n)
+               se ( n % 3 = 0 ) entao
+                  divi3 := divi3 + 1
+               fimse
+               s := s + n
+               contador := contador + 1
+      fimenquanto
+
+fimprocedimento
+inicio
+      soma := 0
+      divi3 := 0
+      somatorio(soma)
+      escreval(" a soma de todos os números digitados é ",soma)
+      escreva(" e o total de números divisiveis por 3 é ",divi3)
+fimalgoritmo

@@ -1,0 +1,49 @@
+algoritmo "semnome"
+var
+   nome, genero, resp, maior_nome, nome_j  : caracter
+   idade, maior, homens, mulher_j, somaM : inteiro
+inicio
+      maior := 0
+      maior_nome := " "
+      homens := 0
+      mulher_j := 100
+      somaM := 0
+      nome_j := " "
+      escreval(" pesquisa geral ")
+      repita
+            escreva(" digite seu nome : ")
+            leia(nome)
+            escreva(" digite seu genero [m] ou [f] : ")
+            leia(genero)
+            escreva(" digite sua idade : ")
+            leia(idade)
+            se ( genero = "m") e ( idade > maior ) entao
+               maior := idade
+               maior_nome := nome
+               homens := homens + 1
+               somaM := somaM + idade
+            senao
+                 se ( genero = "m" ) entao
+                    homens := homens + 1
+                    somaM := somaM + idade
+                 senao
+                      se ( genero = "f" ) e ( idade > maior ) entao
+                         maior := idade
+                         maior_nome := nome
+                      senao
+                           se ( genero = "f" ) e ( idade < mulher_j) entao
+                              mulher_j := idade
+                              nome_j := nome
+                           fimse
+                      fimse
+                 fimse
+            fimse
+            escreva(" voce deseja continar a pesquisa [s] ou [n] : ")
+            leia(resp)
+      ate ( resp = "n")
+      escreval(" a maior idade lida foi a de ",maior_nome," com ",maior," anos de idade ")
+      escreval(" um total de ",homens," homens foram cadastrados ")
+      escreval(" a idade da mulher mais nova cadastrada foi a de ",nome_j," com ",mulher_j" anos")
+      escreval(" e a media da idade dos homens cadastrados foi de ",somaM / homens :4:2)
+
+fimalgoritmo

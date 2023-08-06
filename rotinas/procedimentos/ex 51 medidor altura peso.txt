@@ -1,0 +1,45 @@
+alalgoritmo "semnome"
+var
+   contador, mais90kg, menos50_160, mais100_190  : inteiro
+   media_a, soma_a : real
+procedimento medidor_altura_e_peso (var a, b, c, d ,f : real)
+var
+   nome : caracter
+   altura, peso : real
+inicio
+      repita
+            escreva(" digite seu nome : ")
+            leia(nome)
+            escreva(" digite sua altura : ")
+            leia(altura)
+            escreva(" digite seu peso : ")
+            leia(peso)
+            b := b + altura
+            se ( altura > 1.90 ) e ( peso > 100 ) entao
+               c := c + 1
+               f :=f + 1
+            senao
+                 se ( peso > 90 ) entao
+                    c := c + 1
+                 senao
+                      se ( altura < 1.60 ) e ( peso < 50 ) entao
+                         d := d + 1
+                      fimse
+                 fimse
+            fimse
+            a := a + 1
+      ate ( a = 7 )
+fimprocedimento
+inicio
+      contador := 0
+      soma_a := 0
+      mais90kg := 0
+      menos50_160 := 0
+      mais100_190 := 0
+      medidor_altura_e_peso (contador, soma_a, mais90kg, menos50_160, mais100_190)
+      media_a := soma_a / contador
+      escreval(" a média de altura do grupo é de ",media_a:4:2)
+      escreval(" exatamente ",mais90kg," pesam mais que 90 kg ")
+      escreval("",menos50_160," pesam menos que 50 kg e medem menos que 1.60 de altura")
+      escreval("",mais100_190," pesam mais de 90 kg e medem mais que 1.90 de altura")
+fimalgoritmo

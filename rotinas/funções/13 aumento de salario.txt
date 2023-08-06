@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+   n : inteiro
+   r : real
+funcao aumento( a : inteiro ) : real
+var
+   b : real
+inicio
+      b := a * (15/100)
+      retorne a + b
+fimfuncao
+inicio
+      escreva(" digite aqui seu salário atual : ")
+      leia(n)
+      r := aumento(n)
+      escreva(" o valor do seu salário com 15% de aumento é ",r,"$")
+fimalgoritmo

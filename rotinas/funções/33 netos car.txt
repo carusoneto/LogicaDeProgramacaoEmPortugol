@@ -1,0 +1,68 @@
+algoritmo "semnome"
+var
+   v_dias, v_km, categoria, dias, km, total : real
+funcao valorDIAS (a, b : real) : real
+var
+
+inicio
+       se ( b = 1 ) entao
+          retorne a * 90
+       senao
+            se ( b = 2 ) entao
+               retorne a * 120
+            fimse
+       fimse
+fimfuncao
+funcao valorKM ( a, b : real) : real
+var
+
+inicio
+       se ( b = 1 ) e ( a <= 100) entao
+          retorne a * (20/100)
+       senao
+            se( b = 1 ) e ( a > 100 ) entao
+                retorne a * (10/100)
+            senao
+                 se ( b = 2 ) e ( a <= 200 ) entao
+                    retorne a * (30/100)
+                 senao
+                      se ( b = 2 ) e ( a > 200 ) entao
+                         retorne a * (20/100)
+                      fimse
+                 fimse
+            fimse
+       fimse
+fimfuncao
+funcao soma(a,b : real) : real
+var
+
+inicio
+       retorne a + b
+fimfuncao
+inicio
+      escreva(" digite qual a categoria do carro alugado [1] popular [2] luxo ")
+      leia(categoria)
+      escreva(" digite a quantos dias voce está com o carro : ")
+      leia(dias)
+      escreva(" digite quantos quilometros voce rodou com o veiculo : ")
+      leia(km)
+      escolha(categoria)
+                        caso 1
+                        v_dias := valorDIAS(dias,categoria)
+                        v_km := valorKM(km,categoria)
+                        total := soma(v_dias,v_km)
+                        escreval(" a categoria do veiculo que voce alugou foi : ",categoria)
+                        escreval(" então o valor a ser pago sobre os dias é de ",v_dias," $")
+                        escreval(" e o valor a ser pago relativo a quilometragem é de ",v_km," $")
+                        escreva(" totalizando um total de ",total, " $")
+
+                        caso 2
+                        v_dias := valorDIAS(dias,categoria)
+                        v_km := valorKM(km,categoria)
+                        total := soma(v_dias,v_km)
+                        escreval(" a categoria do veiculo que voce alugou foi : ",categoria)
+                        escreval(" então o valor a ser pago sobre os dias é de ",v_dias," $")
+                        escreval(" e o valor a ser pago relativo a quilometragem é de ",v_km," $")
+                        escreva(" totalizando um total de ",total, " $")
+      fimescolha
+fimalgoritmo

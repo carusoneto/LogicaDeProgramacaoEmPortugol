@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+   contador, c : inteiro
+funcao contagem(var a : inteiro ) : inteiro
+var
+
+inicio
+       retorne a - 1
+fimfuncao
+inicio
+      contador := 30
+      enquanto ( contador >= 1 ) faca
+               se ( contador % 4 = 0 ) entao
+                  escreva("[",contador," ]")
+               senao
+                    escreva(contador)
+               fimse
+               c := contagem(contador)
+               contador := c
+      fimenquanto
+fimalgoritmo

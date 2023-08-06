@@ -1,0 +1,29 @@
+algoritmo "semnome"
+var
+   contador, n, c, par, impar : inteiro
+funcao contagem(a : inteiro) : inteiro
+var
+
+inicio
+       retorne a + 1
+fimfuncao
+inicio
+      contador := 1
+      par := 0
+      impar := 0
+      escreval(" digite seis números : ")
+      enquanto ( contador <= 6 ) faca
+               leia(n)
+               c := contagem(contador)
+               contador := c
+               se ( n % 2 = 0 ) entao
+                  par := par + 1
+               senao
+                    se ( n % 2 = 1 ) entao
+                       impar := impar + 1
+                    fimse
+               fimse
+      fimenquanto
+      escreval(" entre os números digitados existe ",par," números PARES ")
+      escreval(" entre os números digitados existe ",impar," números IMPARES ")
+fimalgoritmo

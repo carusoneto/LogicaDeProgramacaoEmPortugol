@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   v : inteiro
+   m : real
+funcao multa(a : inteiro) : real
+var
+   v_mult : inteiro
+inicio
+       v_mult := v - 80
+       retorne v_mult * 5
+fimfuncao
+inicio
+      escreva(" qual foi a sua velocidade registrada : ")
+      leia(v)
+      se ( v > 80 ) entao
+         m := multa (v)
+         escreval(" você estava acima da velocidade permitida ")
+         escreval(" e sua multa fica no valor de ",m,"$")
+      senao
+           escreva(" você está dentro do limite de velocidade")
+      fimse
+fimalgoritmo

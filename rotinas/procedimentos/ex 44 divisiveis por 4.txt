@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   contador : inteiro
+procedimento cont (var contador : inteiro)
+var
+
+inicio
+       enquanto ( contador <= 30 ) faca
+                se ( contador % 4 = 0 ) entao
+                  escreva("[",contador," ]")
+                senao
+                     escreva(contador)
+                fimse
+               contador := contador + 1
+      fimenquanto
+fimprocedimento
+inicio
+      contador := 1
+      cont (contador)
+      escreval(" ")
+      escreva(" a representação dos '[]' são para informar os números divisiveis por 4 ")
+fimalgoritmo

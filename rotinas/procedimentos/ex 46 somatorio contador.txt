@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+   soma : inteiro
+procedimento somatorio(var soma : inteiro)
+var
+   contador, s : inteiro
+inicio
+      contador := 6
+      s := 0
+      enquanto ( contador <= 100 ) faca
+               escreva(contador," + ")
+               s := s + contador
+               contador := contador + 2
+      fimenquanto
+      soma := s
+fimprocedimento
+inicio
+      somatorio(soma)
+      escreva(" o total é ",soma)
+fimalgoritmo

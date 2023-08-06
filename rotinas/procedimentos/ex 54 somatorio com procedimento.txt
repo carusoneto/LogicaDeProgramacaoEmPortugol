@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   soma, contador : inteiro
+   media : real
+procedimento somatorio (var a, b : inteiro)
+var
+   idade : inteiro
+inicio
+      repita
+            escreva(" digite sua idade : ")
+            leia(idade)
+            a := a + idade
+            b := b + 1
+      ate ( idade = 999 )
+fimprocedimento
+inicio
+      soma := 0
+      somatorio(soma, contador)
+      media := soma / contador
+      escreval(" o total de alunos é ",contador)
+      escreval(" o somatorio de todas as idades é ",soma)
+      escreval(" e a media de todas as idades é ",media:4:2)
+fimalgoritmo

@@ -1,0 +1,15 @@
+algoritmo "semnome"
+var
+   n, c : real
+funcao dolar( n : real ) : real
+var
+
+inicio
+      retorne n / 5,50
+fimfuncao
+inicio
+      escreva(" digite quanto em REAIS você tem na carteira : ")
+      leia(n)
+      c := dolar(n)
+      escreva(" a quantidade de reais que você tem corresponde a ",c:4:2," dolares")
+fimalgoritmo

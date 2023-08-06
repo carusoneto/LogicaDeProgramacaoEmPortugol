@@ -1,0 +1,67 @@
+algoritmo "semnome"
+var
+   homens_30, maior, mulher_j, jovens_18, contador, soma : inteiro
+   n_maior, n_mulher, resp : caracter
+   media : real
+procedimento pesquisa(var a, b , c, d, f , g : inteiro )
+var
+   genero, nome : caracter
+   idade : inteiro
+inicio
+
+      repita
+            escreva(" qual seu genero [m] ou [f] : ")
+            leia(genero)
+            escreva(" digite seu nome : ")
+            leia(nome)
+            escreva(" digite sua idade :")
+            leia(idade)
+            a := a + idade
+            b := b + 1
+            
+            se (genero = "m") e (idade > 30) e (idade > maior) entao
+         		c := idade
+         		n_maior := nome
+         		d := d + 1
+         	senao
+            		se (genero = "m") e (idade > 30) entao
+            			d := d + 1
+            		senao
+               			se (genero = "f") e (idade > maior) entao
+               				c := idade
+               				n_maior := nome
+               			senao
+                 				se (genero = "f") e (idade < 18) entao
+                  					f := idade
+                  					n_mulher := nome
+                  					g := g + 1
+                  				fimse
+         			       fimse
+    		        fimse
+          fimse
+          escreva(" voce deseja continuar [s] ou [n] : ")
+          leia( resp )
+      ate ( resp = "n")
+fimprocedimento
+inicio
+      homens_30 := 0
+   	maior := 0
+   	mulher_j := 100
+   	jovens_18 := 0
+   	n_maior := ""
+   	n_mulher := ""
+   	soma := 0
+      pesquisa(soma, contador, maior, homens_30, mulher_j, jovens_18)
+      media := soma / contador
+      escreval(" ",n_maior," foi a pessoa mais velha registrada")
+      escreval(" ",n_mulher," é a mulher mais jovem da pesquisa")
+      escreval(" a media de idade do grupo é ",media:4:2)
+      escreval(" um total de ",homens_30," homens tem mais que 30 anos")
+      escreval(" um total de ",jovens_18," mulheres são menores que 18 anos")
+
+fimalgoritmo
+
+
+
+
+	

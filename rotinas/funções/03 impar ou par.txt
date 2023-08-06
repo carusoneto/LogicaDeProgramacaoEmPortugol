@@ -1,0 +1,29 @@
+algoritmo "semnome"
+var
+   n, contador : inteiro
+   r : caractere
+funcao par_ou_impar(a : inteiro) : caractere
+inicio
+         se (a%2 = 0) entao
+            retorne " e ele é par"
+         senao
+              retorne " e ele é impar"
+         fimse
+fimfuncao
+inicio
+      escreval("------------------------")
+      escreval("      PAR OU IMPAR      ")
+      escreval("------------------------")
+      escreval("o numero digitado foi, ",n)
+      para contador := 1 ate 5 faca
+         escreva(" digite um numnero : ")
+         leia(n)
+         limpatela
+         escreval("------------------------")
+         escreval("      PAR OU IMPAR      ")
+         escreval("------------------------")
+         escreval("o numero digitado foi, ",n)
+         r := par_ou_impar(n)
+         escreval(r)
+      fimpara
+fimalgoritmo

@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   t1, t2 : inteiro
+procedimento fibo (var a, b : inteiro)
+var
+   t3, contador : inteiro
+inicio
+       para contador := 1 ate 15 faca
+           t3 := a + b
+           escreva(t3)
+           a:= b
+           b := t3
+      fimpara
+fimprocedimento
+inicio
+      escreval(" FIBONACCI ")
+      t1 := 0
+      escreva(t1)
+      t2 := 1
+      escreva(t2)
+      fibo (t1, t2)
+      
+fimalgoritmo

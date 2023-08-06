@@ -1,0 +1,44 @@
+algoritmo "semnome"
+var
+   j1, j2, resp1, resp2, resp : caracter
+inicio
+      repita
+            escreval(" ---------------------- ")
+            escreval("         JOKENPO        ")
+            escreval(" ---------------------- ")
+            escreva(" nome do jogador 1 : ")
+            leia(j1)
+            escreva(" nome do jogador 2 : ")
+            leia(j2)
+            escreval(" ----------------------- ")
+            escreval(" ",j1," joga primeiro ")
+            escreval(" qual a sua escolha, pedra ? papel ? ou tesoura ? ")
+            leia(resp1)
+            limpatela
+            escreval(" ---------------------- ")
+            escreval("         JOKENPO        ")
+            escreval(" ---------------------- ")
+            escreval(" ",j2," joga ")
+            escreval(" qual a sua escolha, pedra ? papel ? ou tesoura ? : ")
+            leia(resp2)
+            limpatela
+            escreval(" ---------------------- ")
+            escreval("         JOKENPO        ")
+            escreval(" ---------------------- ")
+            se ( resp1 = resp2 ) entao
+               escreva(" as duas respostas foram iguais, EMPATE ")
+            senao
+                  se ( resp1 = "pedra" ) e ( resp2 = "tesoura" ) ou ( resp1 = "papel") e ( resp2 = " pedra ") ou ( resp1 = "tesoura" ) e ( resp2 = " papel " )   entao
+                     escreva(" ",j1, " escolheu ,",resp1," e ,",j2," esclheu ",resp2,", entao ")
+                     escreva(" jogador 1 venceu ")
+                     escreval(" ")
+                  senao
+                       escreva(" ",j1, " escolheu ,",resp1," e ,",j2," esclheu ",resp2,", entao ")
+                       escreva(" jogador 2 venceu ")
+                       escreval(" ")
+                  fimse
+            fimse
+            escreva(" voce deseja continuar ? ")
+            leia(resp)
+      ate ( resp = " n " )
+fimalgoritmo

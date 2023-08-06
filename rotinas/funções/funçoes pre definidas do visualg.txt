@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   n : caracter
+   c : inteiro
+inicio
+      escreva(" digite seu nome : ")
+      leia(n)
+      escreval(" o seu nome (",n,") tem um total de ",compr(n)," caracteres")
+      escreval(" o seu nome em letras maiúsculas é ",maiusc(n))
+      escreval(" e ele todo em letras minúsculas é ",minusc(n))
+      escreval(" a primeira letra do seu nome é ",copia(n, 1,1))
+      escreval(" digite a última letra do nome ",copia(maiusc(n),compr(n),1))
+      escreval(" o seu nome tem a letra A e ela está na posição ",pos("a",n))
+      escreval(" o caractere A tem o codigo de número ",asc("A"))
+      escreval(" o codigo de número 65 representa o caracter de número ",carac(65))
+      para c := compr(n) ate 1 passo -1 faca
+           escreva(copia(n,c,1))
+      fimpara
+fimalgoritmo

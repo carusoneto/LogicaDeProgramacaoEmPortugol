@@ -1,0 +1,38 @@
+var
+   maior, homens, mulheres, soma : inteiro
+procedimento pesquisa(var a, b, c, d : inteiro)
+var
+   contador, peso : inteiro
+   genero : caracter
+inicio
+        para contador := 1 ate 8 faca
+           escreva(" qual seu genero [m] ou [f] : ")
+           leia(genero)
+           escreva(" qual o seu peso : ")
+           leia(peso)
+           se ( genero = "m" ) e ( peso > 100 )e ( peso > a ) entao
+              b := b + 1
+              a := peso
+           senao
+                se ( genero = "m" ) e ( peso > 100 ) entao
+                   b := b + 1
+                senao
+                     se ( genero = "m" ) e ( peso > maior ) entao
+                        a := peso
+                     senao
+                          se ( genero = "f" ) entao
+                             c := c + 1
+                             d := d + peso
+                          fimse
+                     fimse
+                fimse
+           fimse
+      fimpara
+fimprocedimento
+inicio
+      pesquisa(maior,homens,mulheres, soma)
+      escreval(" foram cadastradas um total de ",mulheres," mulheres ")
+      escreval(" um total de ",homens," homens pesam mais de 100 kg ")
+      escreval(" a média de peso entre as mulheres é de ",soma / mulheres:4:2)
+      escreval(" o maior peso entre os homens é de ",maior)
+fimalgoritmo

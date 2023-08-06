@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+   contador, n, soma, c : inteiro
+funcao contagem(a : inteiro) : inteiro
+var
+
+inicio
+       retorne a + 1
+fimfuncao
+inicio
+      contador := 1
+      soma := 0
+      escreval(" digite sete números para saber o seu somatório ")
+      enquanto ( contador <= 7 ) faca
+               leia(n)
+               c := contagem(contador)
+               contador := c
+               soma := soma + n
+      fimenquanto
+      escreval(" a soma dos sete números digitados é : ",soma)
+fimalgoritmo

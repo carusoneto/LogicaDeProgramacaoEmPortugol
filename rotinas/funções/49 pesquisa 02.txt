@@ -1,0 +1,47 @@
+algoritmo "semnome"
+var
+   n, contador, soma, maior18, menor5, maior, c : inteiro
+funcao contagem( a : inteiro ) : inteiro
+var
+
+inicio
+       retorne a + 1
+fimfuncao
+inicio
+      soma := 0
+      maior18 := 0
+      menor5 := 0
+      maior := 0
+      escreval(" digite a idade de 10 pessoas para uma pesquisa : ")
+      enquanto ( contador <= 10 ) faca
+               leia(n)
+               soma := soma + n
+               c := contagem(contador)
+               contador := c
+               se ( n < 5 ) e ( n > maior ) entao
+                  menor5 := menor5 + 1
+                  maior := n
+               senao
+                    se ( n < 5 ) entao
+                       menor5 := menor5 + 1
+                    senao
+                         se ( n > 18 ) e ( n > maior ) entao
+                            maior18 := maior18 + 1
+                            maior :=  n
+                         senao
+                              se ( m > 18 ) entao
+                                 maior18 := maior18 + 1
+                              senao
+                                   se ( n > maior ) entao
+                                      maior := n
+                                   fimse
+                              fimse
+                         fimse
+                    fimse
+               fimse
+      fimenquanto
+      escreval(" a media das idade digitadas é ",soma / contador)
+      escreval(" existem um total de ",maior18," pessoas maiores que 18 anos")
+      escreval(" existem um total de ",menor5," pessoas menores que 5 anos")
+      escreval(" e a maior idade digitada foi ",maior)
+fimalgoritmo

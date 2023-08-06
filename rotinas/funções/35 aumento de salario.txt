@@ -1,0 +1,69 @@
+algoritmo "semnome"
+var
+   genero : inteiro
+   salario, anos, aumento1, total1, aumento2, total2 : real
+funcao aumento_salarioh(a, b : real) : real
+var
+
+inicio
+      se ( b <= 20 ) entao
+         retorne a * (3/100)
+      senao
+           se ( b > 20 ) e ( b <= 30 ) entao
+              retorne a * (13/100)
+           senao
+                se ( b > 30 ) entao
+                   retorne  a * (25/100)
+                fimse
+           fimse
+      fimse
+fimfuncao
+funcao toth(a, b : real ) : real
+var
+
+inicio
+       retorne a + b
+fimfuncao
+funcao aumento_salariom(a, b : real) : real
+var
+
+inicio
+      se ( b <= 15 ) entao
+         retorne a * (5/100)
+      senao
+           se ( b > 15 ) e ( b <= 20 ) entao
+              retorne a * (12/100)
+           senao
+                se ( b > 20 ) entao
+                   retorne  a * (23/100)
+                fimse
+           fimse
+      fimse
+fimfuncao
+funcao totm(a, b : real ) : real
+var
+
+inicio
+       retorne a + b
+fimfuncao
+inicio
+      escreva(" qual seu genero : [1] masculino [2] feminio ")
+      leia(genero)
+      escreva(" digite o valor do seu salário atual : ")
+      leia(salario)
+      escreva(" digite a quantos anos você trabalha na empresa : ")
+      leia(anos)
+      escolha(genero)
+                     caso 1
+                     aumento1 := aumento_salarioh(salario,anos)
+                     total1 := toth(aumento1,salario)
+                     escreval(" o seu salario teve um aumento de ",aumento1,"$")
+                     escreval(" logo o seu novo salario vai valer ",total1,"$")
+                     
+                     caso 2
+                     aumento2 := aumento_salariom(salario,anos)
+                     total2 := totm(aumento2,salario)
+                     escreval(" o seu salario teve um aumento de ",aumento2,"$")
+                     escreval(" logo o seu novo salario vai valer ",total2,"$")
+      fimescolha
+fimalgoritmo

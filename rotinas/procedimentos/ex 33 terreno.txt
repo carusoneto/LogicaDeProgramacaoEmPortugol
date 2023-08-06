@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   larg, comp : real
+procedimento area(a, b : real)
+var
+   a_total : real
+inicio
+      a_total := a * b
+      se (a_total <= 100) entao
+         escreva(" o seu terreno é considerado como POPULAR ")
+      senao
+           se (a_total > 100 ) e (a_total <= 500) entao
+              escreva(" o seu terreno é considerado como MASTER ")
+           senao
+                escreva(" o seu terreno é considerado como VIP ")
+           fimse
+      fimse
+fimprocedimento
+inicio
+      escreva(" digite a largura do terreno : ")
+      leia(larg)
+      escreva(" digite o comprimento do terreno : ")
+      leia(comp)
+      area(larg, comp)
+fimalgoritmo

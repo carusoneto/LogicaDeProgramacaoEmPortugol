@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+   k, p : real
+funcao preco( a : real ) : real
+var
+
+inicio
+      se ( a <= 200 ) entao
+         retorne a * 0.50
+      senao
+           se ( a > 200 ) entao
+              retorne a * 0.45
+           fimse
+      fimse
+fimfuncao
+inicio
+      escreva(" digite a distância que voce deseja percorrer em quilômetros : ")
+      leia(k)
+      p := preco(k)
+      escreva(" a sua viagem é de ",k," quilometros e você pagará um valor de ",p,"$")
+fimalgoritmo

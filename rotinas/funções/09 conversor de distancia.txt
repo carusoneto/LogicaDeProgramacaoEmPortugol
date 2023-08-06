@@ -1,0 +1,67 @@
+algoritmo "semnome"
+var
+   m, r1, d : real
+   contador : inteiro
+funcao conversao(m : real ) : real
+var
+
+inicio
+      se ( d = 1 ) entao
+         retorne m / 1000
+      senao
+           se ( d = 2 ) entao
+              retorne m / 100
+           senao
+                se ( d = 3 ) entao
+                   retorne m / 10
+                senao
+                     se ( d = 4 ) entao
+                        retorne m * 10
+                     senao
+                          se ( d = 5 ) entao
+                             retorne m * 100
+                          senao
+                               se ( d = 6 ) entao
+                                  retorne m * 1000
+                               fimse
+                          fimse
+                     fimse
+                fimse
+           fimse
+      fimse
+fimfuncao
+inicio
+      escreva(" digite sua distância em metros : ")
+      leia(m)
+      para contador := 1 ate 5 faca
+            escreval(" escolha para qual a unidade de distância você quer converter sua distância em metros ")
+            escreval(" [1] para km ")
+            escreval(" [2] para hm ")
+            escreval(" [3] para dam ")
+            escreval(" [4] para dm ")
+            escreval(" [5] para cm ")
+            escreval(" [6] para mm ")
+            escreva(" escolha sua unidade de medida : ")
+            leia(d)
+            escolha (d)
+                    caso 1
+                    r1 := conversao(m)
+                    escreval(" a conversão de ",m,"m para kilômetros é ",r1,"km")
+                    caso 2
+                    r1 := conversao(m)
+                    escreval(" a conversão de ",m,"m para hequitômetros é ",r1,"hm")
+                    caso 3
+                    r1 := conversao(m)
+                    escreval(" a conversão de ",m,"m para decametro é ",r1,"dam")
+                    caso 4
+                    r1 := conversao(m)
+                    escreval(" a conversão de ",m,"m para decimetro é ",r1,"dm")
+                    caso 5
+                    r1 := conversao(m)
+                    escreval(" a conversão de ",m,"m para centimetro é ",r1,"cm")
+                    caso 6
+                    r1 := conversao(m)
+                    escreval(" a conversão de ",m,"m para milimetros é ",r1,"mm")
+            fimescolha
+      fimpara
+fimalgoritmo

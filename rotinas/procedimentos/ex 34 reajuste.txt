@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   nome : caracter
+   salario, anos_empresa : real
+procedimento aumento(a, b : real)
+var
+
+inicio
+      se ( b <= 3 ) entao
+         a:= a + (a * 3/100)
+         escreva(" o seu novo salário é de ",a:4:2," reais")
+      senao
+           se ( b > 3 ) e ( b <= 10) entao
+              a:= a + (a * 12.5/100)
+              escreva(" o seu novo salário é de ",a:4:2," reais")
+           senao
+                a:= a + (a * 20/100)
+                escreva(" o seu novo salário é de ",a:4:2," reais")
+           fimse
+      fimse
+fimprocedimento
+inicio
+      escreva(" digite qual o seu nome : ")
+      leia(nome)
+      escreva(" digite qual o seu salario : ")
+      leia(salario)
+      escreva(" quantos anos você tem na empresa : ")
+      leia(anos_empresa)
+      aumento(salario, anos_empresa)
+fimalgoritmo

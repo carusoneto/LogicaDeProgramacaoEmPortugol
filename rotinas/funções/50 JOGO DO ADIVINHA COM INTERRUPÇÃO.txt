@@ -1,0 +1,23 @@
+algoritmo "semnome"
+var
+   n, num, contador : inteiro
+inicio
+      num := 3
+      contador := 1
+      escreval(" irei sortear um nuúmero entre 1 e 10 ")
+      escreval(" porém voce terá somente 5 chances. ")
+      repita
+               escreva(" tente acertar : ")
+               leia(n)
+               se ( n = num ) entao
+                  contador := 10
+               senao
+                    contador := contador + 1
+               fimse
+      ate ( contador > 5 )
+      se ( n = num ) entao
+         escreva(" voce acertou o número é ",num)
+      senao
+           escreva(" voce não consegui acertar o numero era : ",num)
+      fimse
+fimalgoritmo

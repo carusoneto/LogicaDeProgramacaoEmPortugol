@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   genero, resp : caracter
+   masculino, soma_m, feminino, soma_f, salario : inteiro
+inicio
+      masculino := 0
+      soma_m := 0
+      feminino := 0
+      soma_f := 0
+      repita
+            escreva(" qual seu gênero [m] ou [f] : ")
+            leia(genero)
+            escreva(" qual o seu salário : ")
+            leia(salario)
+            escreva(" voce deseja continuar [s] ou [n] : ")
+            leia(resp)
+            limpatela
+                     se ( genero = "m" ) entao
+                        masculino := masculino + 1
+                        soma_m := soma_m + salario
+                     senao
+                          se ( genero = "f" ) entao
+                             feminino := feminino + 1
+                             soma_f := soma_f + salario
+                          fimse
+                     fimse
+      ate ( resp = "n" )
+      escreval(" o somatório do salário dos homens é de ",soma_m)
+      escreval(" o somatório do salário das mulheres é de ",soma_f)
+fimalgoritmo

@@ -1,0 +1,36 @@
+algoritmo "semnome"
+var
+   entre,n, soma_imp, soma_intervalo : inteiro
+procedimento intervalo( var a, b, c, d : inteiro)
+var
+    n1 : inteiro
+inicio
+       para a := a ate 1 passo -1 faca
+           escreva(" digite um valor qualquer : ")
+           leia(n1)
+           se ( n1 > 0 ) e ( n1 < 10 ) e ( n1%2 = 1 ) entao
+              b := b + 1
+              c := c + n1
+              d := d + n1
+           senao
+                se ( n1%2 = 1 ) entao
+                c := c + n1
+                senao
+                      se ( n1 > 0 ) e ( n1 < 10 ) entao
+                         b := b + 1
+                      fimse
+                fimse
+           fimse
+      fimpara
+fimprocedimento
+inicio
+      entre := 0
+      soma_imp := 0
+      soma_intervalo := 0
+      escreva(" quantas vezes você quer contar : ")
+      leia(n)
+      intervalo(n, entre, soma_imp, soma_intervalo)
+      escreval(" exatamente ",entre," números estão entre o intervalo de 0 e 10")
+      escreval(" a soma dos números impares é ",soma_imp)
+      escreval(" e a soma dos números impares dentro do intervalo de 0 a 10 é ",soma_intervalo)
+fimalgoritmo
