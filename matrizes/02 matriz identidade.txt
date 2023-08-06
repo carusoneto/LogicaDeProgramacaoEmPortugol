@@ -1,0 +1,25 @@
+algoritmo "semnome"
+var
+   n : vetor[1..5, 1..5] de inteiro
+   c,i, tot : inteiro
+inicio
+      tot := 0
+      para c := 1 ate 5 passo 1 faca
+           para i := 1 ate 5 passo 1 faca
+                se ( c = i ) entao
+                   n[c,i] := 1
+                   tot := tot + n[c,i]
+                senao
+                     n[c,i] := 0
+                fimse
+           fimpara
+      fimpara
+      escreval(" matriz identidade : ")
+      para c := 1 ate 5 passo 1 faca
+           para i := 1 ate 5 passo 1 faca
+                escreva(n[c,i])
+           fimpara
+           escreval(" ")
+      fimpara
+      escreva(" e a soma dos números da diagonal principal é : ",tot)
+fimalgoritmo
